@@ -1,0 +1,18 @@
+.introduction {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.primary-message {
+    font-size: 140%;
+    width: 30%;
+    text-align: right;
+    padding: 0 30px 0 0;
+}
+
+.secondary-message {
+    width: 40%;
+    font-size: 110%;
+    padding: 8px 0 0 0;
+}
