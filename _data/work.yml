@@ -1,24 +1,24 @@
-work:
-  - title: A Voice for the Innocent
-    position: Vice President
-    description: Vestibulum vehicula purus non suscipit congue. Vestibulum posuere iaculis maximus. Quisque libero diam, convallis bibendum augue id, ultrices sed.
-    viewClass: a-voice-for-the-innocent
-    tags: Non-Profit
+---
+- title: A Voice for the Innocent
+  position: Vice President
+  description: Vestibulum vehicula purus non suscipit congue. Vestibulum posuere iaculis maximus. Quisque libero diam, convallis bibendum augue id, ultrices sed.
+  viewClass: a-voice-for-the-innocent
+  tags: Non-Profit
 
-  - title: Rockfish Digital
-    position: Developer II
-    description: Proin in augue pellentesque metus consequat auctor. Sed faucibus in nulla quis dictum. Praesent sit amet auctor erat. Vivamus non lacinia posuere.
-    viewClass: rockfish
-    tags: Grunt, Gulp, Javascript, PHP, Drupal
+- title: Rockfish Digital
+  position: Developer II
+  description: Proin in augue pellentesque metus consequat auctor. Sed faucibus in nulla quis dictum. Praesent sit amet auctor erat. Vivamus non lacinia posuere.
+  viewClass: rockfish
+  tags: Grunt, Gulp, Javascript, PHP, Drupal
 
-  - title: Girl Develop It
-    position: Curriculum Developer/Teacher
-    description: I've been working to help Girl Develop It students learn various web technologies since 2012. Through GDI, I've developed a love of teaching and am humbled to be able to participate.
-    viewClass: girl-develop-it
-    tags: Non-Profit
-    
-  - title: U.S. Marine Corps
-    position: Corporal
-    description: While serving, I led the administrative office of a formal military school and was responsible for the graduation requirements of over 10,000 student Marines.
-    viewClass: united-states-marine-corps
-    tags: Military
+- title: Girl Develop It
+  position: Curriculum Developer/Teacher
+  description: I've been working to help Girl Develop It students learn various web technologies since 2012. Through GDI, I've developed a love of teaching and am humbled to be able to participate.
+  viewClass: girl-develop-it
+  tags: Non-Profit
+
+- title: U.S. Marine Corps
+  position: Corporal
+  description: While serving, I led the administrative office of a formal military school and was responsible for the graduation requirements of over 10,000 student Marines.
+  viewClass: united-states-marine-corps
+  tags: Military
