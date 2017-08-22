@@ -1,0 +1,55 @@
+{
+  "workItems": [
+    {
+      "title": "Freelance",
+      "position": "Web Developer",
+      "description": "Making super cool large scale digital marketing websites. Various MVC frameworks, Content Management Systems and multiple languages. Making weird robots.",
+      "viewClass": "rockfish",
+      "tags": "Grunt, Gulp, Javascript, PHP, Drupal"
+    },
+    {
+      "title": "A Voice for the Innocent",
+      "position": "Vice President",
+      "description": "Responsible for creating and executing effective campaigns and partnerships that further the mission of an anti-sexual violence non-profit.",
+      "viewClass": "a-voice-for-the-innocent",
+      "tags": "Non-Profit"
+    },
+    {
+      "title": "Girl Develop It",
+      "position": "Instructor",
+      "description": "I\"ve been working to help Girl Develop It students learn various web technologies since 2012. Through GDI, Ive developed a love of teaching and am humbled to be able to participate.",
+      "viewClass": "girl-develop-it",
+      "tags": "Non-Profit"
+    }
+  ],
+  "clientItems": [
+    {
+      "image": "/static/work/mars.png",
+      "client": "Mars",
+      "workType": "Angular Development",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel nulla sed leo sollicitudin porta. Maecenas et quam eget dolor aliquet varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "tags": "Angular, Drupal, Gulp"
+    },
+    {
+      "image": "/static/work/pappy.png",
+      "client": "Old Rip Van Winkle",
+      "workType": "Wordpress Development",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel nulla sed leo sollicitudin porta. Maecenas et quam eget dolor aliquet varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "tags": "PHP, Wordpress, Bedrock, Gulp"
+    },
+    {
+      "image": "/static/work/readyseteat.png",
+      "client": "ConAgra",
+      "workType": "Site Redesign and Emails",
+      "description": "ReadySetEat.com and ListoYServido.com are recipe websites that deliver up easy recipes which typically recommend ConAgra products. I was one of three web developers working with a robust content, design and user experience team on the re-design of an existing Java based website.",
+      "tags": "Java"
+    },
+    {
+      "image": "/static/work/mysunrun.png",
+      "client": "Sunrun",
+      "workType": "Angular Development",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel nulla sed leo sollicitudin porta. Maecenas et quam eget dolor aliquet varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "tags": "Angular, Drupal, Gulp"
+    }
+  ]
+}
