@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Gentium+Book');
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}

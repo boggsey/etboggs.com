@@ -1,0 +1,62 @@
+header {
+	width: 100%;
+	position: fixed;
+	z-index: 900;
+
+	@media screen and (max-width: 420px) {
+		position: absolute;
+	}  
+
+	.container {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+		height: 100px;
+		width: 95%;
+	}
+
+	nav {
+		width: 30%;
+		color: #777;
+		text-align: right;
+
+		.return {
+			border-right: 1px solid grey;
+		}
+	
+		a {
+			text-decoration: none;
+			display: block;
+			color: #333;
+			font-family: 'Roboto';
+			text-transform: uppercase;
+			font-weight: 600;
+			padding-right: 5px;
+		}
+	}
+}
+
+.logo {
+	width: 45px;
+	height: 45px;
+	font: 400 45px/55px 'gentium book basic';
+	color: black;
+}
+
+@media screen and (max-width: 360px) {
+  .logo {
+		width: 100%;
+		text-align: center;
+	}
+	
+	nav {
+		text-align: center;
+		width: 100%;
+	}
+
+	nav a {
+		display: inline-block;
+		padding: 0 5px;
+	}
+}

@@ -1,0 +1,77 @@
+#about {
+	height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+
+  .about-image {
+    @at-root #contact & {
+      width: 300px;
+    }
+
+    width: 400px;
+  
+    img {
+      width: 100%;
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
+    width: 80%;
+
+    @media screen and (max-width: 420px) {
+      flex-direction: column;
+      width: 98%;
+    }  
+  }
+
+  h2 {
+    margin: 0;
+    font: 400 30px/25px 'gentium book basic';
+  }
+
+  .full-description {
+    width: 50%;
+    font-size: 18px;
+    line-height: 1.5em;
+
+    @media screen and (max-width: 420px) {
+      width: 100%;
+    }  
+  }
+
+  .social {
+    text-transform: uppercase;
+
+    div {
+      width: auto;
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+    svg rect {
+      fill: none;
+    }
+
+    .social-icon--linkedin {
+      margin-top: -2px;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #about .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #about .about-image {
+    width: 100%;
+  }
+}

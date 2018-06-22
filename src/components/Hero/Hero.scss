@@ -1,0 +1,58 @@
+.hero {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+  align-items: center;
+	background-size: cover;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+	}
+
+	li {
+		color: white;
+		text-transform: uppercase;
+		display: inline-block;
+		padding-right: 10px;
+		font: 600 15px/1.4 'Roboto';
+
+		&:last-of-type {
+			padding-right: 0;
+		}
+	}
+}
+
+.name {
+	margin-top: 0;
+	font: 400 45px/55px 'gentium book basic';
+	margin-bottom: 0;
+	padding: 10px 0 20px 0;	
+	color:white;
+	width: 70%;
+	text-align: center;
+}
+
+.learn-more {
+	border: 2px solid white;
+	padding: 10px 20px;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Roboto';
+}
+
+@media screen and (max-width: 360px) {
+  .name {
+		font: 400 25px/35px 'gentium book basic';
+		width: 100%;
+	}
+	
+	.hero li {
+		font: 600 8px/1.2 'Roboto';
+	}
+}
