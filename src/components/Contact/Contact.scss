@@ -5,11 +5,20 @@
   flex-flow: row-wrap;
   justify-content: space-between;
   color: white;
+
+  @media screen and (max-width: 420px) {
+    flex-direction: column;
+  }
 }
 
 .contact-map {
   width: 50%;
   position: relative;
+
+  @media screen and (max-width: 420px) {
+    order: 2;
+    width: 100%;
+  }
 }
 
 .contact-details {
@@ -21,8 +30,19 @@
   align-items: flex-end;
   justify-content: center;
 
+  @media screen and (max-width: 420px) {
+    order: 1;
+    width: 100%;
+    text-align: center;
+  }
+
   .section-header {
     margin-bottom: 10px;
+
+    @media screen and (max-width: 420px) {
+      text-align: center;
+      width: 100%;
+    }
   }
 
   p {
@@ -36,11 +56,19 @@
     width: 30px;
     height: 2px;
     background: white;
+
+    @media screen and (max-width: 420px) {
+      margin: 0 auto;
+    }
   }
 
   .social {
     text-transform: uppercase;
     padding: 20px 0;
+
+    @media screen and (max-width: 420px) {
+      width: 100%;
+    }
 
     a {
       width: auto;

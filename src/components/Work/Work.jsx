@@ -34,8 +34,6 @@ const customStyles = {
   }
 };
 
-ReactModal.setAppElement(document.getElementById('#app'));
-
 class Work extends Component {
   constructor(props) {
     super(props);
@@ -80,6 +78,7 @@ class Work extends Component {
           onAfterOpen={this.afterOpenModal}
           onRequestClose={this.handleCloseModal}
           style={customStyles}
+          ariaHideApp={false}
         >
           <WorkItem handleCloseModal={this.handleCloseModal} />
         </ReactModal>

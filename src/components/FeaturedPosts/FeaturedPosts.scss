@@ -15,16 +15,24 @@
 
     @media screen and (max-width: 420px) {
       flex-direction: column;
-      width: 98%;
-    }  
+      width: 85%;
+    }
   }
 
   .writing-list {
     width: 20%;
     text-align: right;
 
+    @media screen and (max-width: 420px) {
+      width: 100%;
+    }
+
     .section-header {
       text-align: right;
+
+      @media screen and (max-width: 420px) {
+        text-align: center;
+      }
     }
   }
 
@@ -32,6 +40,10 @@
     width: 75%;
     font-size: 20px;
     line-height: 26px;
+
+    @media screen and (max-width: 420px) {
+      width: 100%;
+    }
   }
 }
 
