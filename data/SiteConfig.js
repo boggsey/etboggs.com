@@ -22,20 +22,20 @@ module.exports = {
     {
       label: "GitHub",
       url: "https://github.com/boggsey",
-      iconClassName: "fa fa-github"
+      socialIcon: "social-github"
     },
     {
       label: "Twitter",
       url: "https://twitter.com/etboggs",
-      iconClassName: "fa fa-twitter"
+      socialIcon: "social-twitter" 
     },
     {
-      label: "Email",
+      label: "Linkedin",
       url: "mailto:eric@mlemedia.com",
-      iconClassName: "fa fa-envelope"
+      socialIcon: "TiSocialLinkedIn"
     }
   ],
-  copyright: "© 2018. Eric Boggs", // Copyright string for the footer of the website and RSS feed.
+  copyright: "© 2018 Eric Boggs", // Copyright string for the footer of the website and RSS feed.
   themeColor: "#000000", // Used for setting manifest and progress theme colors.
   backgroundColor: "#e0e0e0" // Used for setting manifest background color.
 };

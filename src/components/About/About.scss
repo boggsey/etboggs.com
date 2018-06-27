@@ -49,18 +49,11 @@
   .social {
     text-transform: uppercase;
 
-    div {
+    a {
       width: auto;
       display: inline-block;
-      margin-right: 5px;
-    }
-
-    svg rect {
-      fill: none;
-    }
-
-    .social-icon--linkedin {
-      margin-top: -2px;
+      padding-right: 10px;
+      color: black;
     }
   }
 }

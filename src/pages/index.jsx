@@ -5,6 +5,7 @@ import About from "../components/About/About";
 import FeaturedPosts from "../components/FeaturedPosts/FeaturedPosts";
 import Work from "../components/Work/Work";
 import Contact from "../components/Contact/Contact";
+import config from "../../data/SiteConfig";
 
 
 class Index extends React.Component {
@@ -16,7 +17,7 @@ class Index extends React.Component {
         <About />
         <Work />
         <FeaturedPosts />
-        <Contact />
+        <Contact config={config}/>
       </div>
     );
   }

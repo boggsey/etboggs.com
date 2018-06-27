@@ -2,6 +2,8 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
+console.log(process.env.GATSBY_GOOGLE_MAPS_API);
+
 const config = require("./data/SiteConfig");
 
 const pathPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix;

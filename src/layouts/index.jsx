@@ -50,7 +50,7 @@ export default class MainLayout extends React.Component {
         </Helmet>
         <Header />
         {children()}
-        <Footer config={config} />
+        <Footer />
       </div>
     );
   }
