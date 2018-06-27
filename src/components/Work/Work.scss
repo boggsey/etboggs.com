@@ -8,6 +8,10 @@
   justify-content: center; 
   position: relative;
 
+  @media screen and (max-width: 420px) {
+    padding: 40px 0;
+  }  
+  
   .container {
     width: 80%;
     display: flex;

@@ -6,6 +6,10 @@
   align-items: center;
   justify-content: center; 
 
+  @media screen and (max-width: 420px) {
+    padding: 40px 0;
+  }  
+  
   .container {
     display: flex;
     justify-content: space-between;
