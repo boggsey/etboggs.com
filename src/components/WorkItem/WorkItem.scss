@@ -1,6 +1,8 @@
+.ReactModal__Body--open {
+  overflow: hidden;
+}
+
 .work-item-individual {
-  position: fixed;
-  top: 0;
   background: #fdfdfd;
   min-height: 100vh;
   width: 100%;
@@ -55,6 +57,7 @@
   @media screen and (max-width: 420px) {
     width: 100%;
     min-height: 30vh;
+    padding: 20px 10%;
   }
 
   .line {
@@ -72,6 +75,7 @@
     margin-top: 50px;
     font: 400 15px/20px;
   }
+
 }
 
 .work-item-explanation {
@@ -85,8 +89,10 @@
   position: relative;
 
   @media screen and (max-width: 420px) {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     min-height: 50vh;
+    padding: 30px 0;
   }
 
   h3 {
@@ -99,9 +105,5 @@
     text-align: right;
     padding-bottom: 5px;
     cursor: pointer;
-
-    &:hover {
-
-    }
   }
 }

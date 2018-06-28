@@ -1,5 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
+import WorkItem from "../components/WorkItem/WorkItem";
 import config from "../../data/SiteConfig";
 
 class WorkFusion extends React.Component {
@@ -7,7 +8,7 @@ class WorkFusion extends React.Component {
     return (
       <div className="Work-container">
         <Helmet />
-        Hi
+        <WorkItem />
       </div>
     );
   }
