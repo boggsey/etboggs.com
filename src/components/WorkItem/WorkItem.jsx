@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import WorkItemPicture from "./avfti-strength.jpg";
+import React, { Component } from 'react';
+import WorkItemPicture from './avfti-strength.jpg';
 import "./WorkItem.scss";
 
 const sectionStyle = {
@@ -22,7 +22,9 @@ class WorkItem extends Component {
           </div>
           
           <div className="work-item-explanation">
-            <a onClick={this.props.handleCloseModal} className="return-to-work">Return to Work</a>
+            <a onClick={this.props.handleCloseModal} className="return-to-work">
+              Return to Work
+            </a>
             
             <h3>Co-Founder</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s</p>
