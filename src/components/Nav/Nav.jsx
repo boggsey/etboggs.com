@@ -7,9 +7,24 @@ class Nav extends Component {
     return (
       <nav>
         <div className="primary-nav">
-          <a href="#about">About</a>
-          <a href="#work">Work</a>
-          <a href="#writing">Writing</a>
+          <Link
+            to="/#about"
+            innerRef={(el) => { this.myLink = el }}
+          >
+            About
+          </Link>
+          <Link
+            to="/#work"
+            innerRef={(el) => { this.myLink = el }}
+          >
+            Work
+          </Link>
+          <Link
+            to="/#writing"
+            innerRef={(el) => { this.myLink = el }}
+          >
+            writing
+          </Link>
         </div>
       </nav>
     );

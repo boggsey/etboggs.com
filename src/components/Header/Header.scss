@@ -42,6 +42,11 @@ header {
 	height: 45px;
 	font: 400 45px/55px 'gentium book basic';
 	color: black;
+
+	a {
+		text-decoration: none;
+		color: black;
+	}
 }
 
 @media screen and (max-width: 360px) {

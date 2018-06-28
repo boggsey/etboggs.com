@@ -18,7 +18,7 @@ import {
   RedditIcon
 } from "react-share";
 import config from "../../../data/SiteConfig";
-import "./SocialLinks.css";
+import "./SocialLinks.scss";
 
 class SocialLinks extends Component {
   render() {
@@ -27,7 +27,7 @@ class SocialLinks extends Component {
     const realPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix;
     const url = config.siteUrl + realPrefix + postPath;
 
-    const iconSize = mobile ? 36 : 48;
+    const iconSize = mobile ? 15 : 36;
     const filter = count => (count > 0 ? count : "");
 
     return (

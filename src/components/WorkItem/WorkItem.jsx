@@ -28,10 +28,10 @@ class WorkItem extends Component {
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s</p>
 
             <h3>Technology</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s</p>
+            <p>Development, maintenance and deployment of the organization’s website and storytelling platform with an average of 18,000 monthly visitors.</p>
 
             <h3>Strategy</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s</p>
+            <p>Responsible for strategies and partnerships that further the mission of a national anti-sexual violence non-profit, including outreach and fundraising efforts spanning 30 states</p>
 
           </div>
         </div>

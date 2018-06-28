@@ -6,15 +6,20 @@ import "./Header.scss";
 class Header extends Component {
 
   render() {
-    const {config} = this.props;
+    const { config } = this.props;
     return (
       <header>
         <div className="container">
           <div className="logo">
-            EB
+            <Link
+              to="/"
+              innerRef={(el) => { this.myLink = el }}
+            >
+              EB
+            </Link>
           </div>
           <Nav />
-        </div>	
+        </div>
       </header>
     );
   }

@@ -9,17 +9,17 @@ import "./Work.scss";
 const work = [
   {
     name: 'Fusion Alliance',
-    image: 'LogoFusion',
+    image: LogoFusion,
     position: 'Web Developer'
   },
   {
     name: 'A Voice for the Innocent',
-    image: 'LogoAvfti',
+    image: LogoAvfti,
     position: 'Vice President'
   },
   {
     name: 'Girl Develop It',
-    image: 'LogoGdi',
+    image: LogoGdi,
     position: 'Instructor'
   }
 ];
@@ -59,7 +59,7 @@ class Work extends Component {
     const workItems = work.map((work,index) =>
       (
         <div key={index.toString()} className="work-item-overview" role="button" onClick={this.handleOpenModal}>
-          <img src={work.image} className="icon" alt="" />
+          {<img src={work.image} className="icon" alt="" />}
           <h3>{work.name}</h3>
           <p className="position">{work.position}</p>
           <div className="line" />

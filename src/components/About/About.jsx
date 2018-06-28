@@ -15,11 +15,9 @@ class About extends Component {
               <UserLinks size="20" />
             </div>
           </div>
-          
           <div className="about-image">
             <img src="http://placehold.it/400x400" alt=""/>
           </div>
-          
         </div>
       </section>
     );

@@ -46,6 +46,8 @@
   background-color: rgba(225,225,225,.5);
   text-shadow: 0 0 10px #000000;
   cursor: pointer;
+  background: url(http://placecorgi.com/600x1000) no-repeat;
+  background-size: cover;
 
   @media screen and (max-width: 420px) {
     width: 100%;
