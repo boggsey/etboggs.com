@@ -1,3 +1,5 @@
+@import '../../templates/variables.scss';
+
 .ReactModal__Body--open {
   overflow: hidden;
 }
@@ -17,7 +19,7 @@
     flex-direction: row;
     align-items: stretch;
 
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: $breakpoint-mobile-max) {
       flex-direction: column;
       width: 100%;
       position: absolute;
@@ -25,7 +27,7 @@
   }
 
   h2 {
-    font: 400 30px/25px 'gentium book basic';
+    font: 400 30px/25px 'Alegreya';
     padding-bottom: 30px;
   }
 }
@@ -38,7 +40,7 @@
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: $breakpoint-mobile-max) {
     width: 100% !important;
     min-height: 20vh;
   }
@@ -54,7 +56,7 @@
   padding: 80px;
   justify-content: center;
 
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: $breakpoint-mobile-max) {
     width: 100%;
     min-height: 30vh;
     padding: 20px 10%;
@@ -67,7 +69,7 @@
   }
 
   h3 {
-    font: 700 24px/28px 'Roboto';
+    font: 700 24px/28px 'Alegreya Sans';
     text-transform: uppercase;
   }
 
@@ -88,7 +90,7 @@
   padding-left: 50px;
   position: relative;
 
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: $breakpoint-mobile-max) {
     width: 80%;
     margin: 0 auto;
     min-height: 50vh;
@@ -96,7 +98,7 @@
   }
 
   h3 {
-    font: 700 20px/20px 'Roboto';
+    font: 700 20px/20px 'Alegreya Sans';
     text-transform: uppercase;
   }
 

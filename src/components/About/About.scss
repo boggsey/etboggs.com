@@ -1,3 +1,5 @@
+@import '../../templates/variables.scss';
+
 #about {
 	min-height: 100vh;
   width: 100%;
@@ -6,7 +8,7 @@
   flex-direction: row;
   align-items: center;
 
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: $breakpoint-mobile-max) {
     padding: 40px 0;
   }  
 
@@ -17,17 +19,16 @@
     align-items: stretch;
     width: 80%;
 
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: $breakpoint-mobile-max) {
       flex-direction: column;
       width: 85%;
     }  
   }
 
   h2 {
-    margin: 0;
-    font: 400 30px/25px 'gentium book basic';
+    margin: 0; 
 
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: $breakpoint-mobile-max) {
       text-align: center;
       padding: 20px 0;
       margin: 0;
@@ -37,7 +38,7 @@
   .about-image {
     width: 400px;
   
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: $breakpoint-mobile-max) {
       width: 100%;
       order: 1;
     } 
@@ -52,20 +53,18 @@
     font-size: 18px;
     line-height: 1.5em;
 
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: $breakpoint-mobile-max) {
       width: 100%;
       order: 2;
     }  
   }
 
   .social {
-    text-transform: uppercase;
-
     a {
       width: auto;
       display: inline-block;
       padding-right: 10px;
-      color: black;
+      color: $body-copy-dark;
     }
   }
 }

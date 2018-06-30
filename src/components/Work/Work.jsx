@@ -69,7 +69,7 @@ class Work extends Component {
 
     return (
       <section id="work">
-        <h2>Work</h2>
+        <h2 class="section-header">Work</h2>
         <div className="container">
           {workItems}
         </div>

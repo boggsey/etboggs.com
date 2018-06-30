@@ -1,3 +1,5 @@
+@import '../../templates/variables.scss';
+
 #featured-posts {
   min-height: 100vh;
   width: 100%;
@@ -6,7 +8,7 @@
   align-items: center;
   justify-content: center; 
 
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: $breakpoint-mobile-max) {
     padding: 40px 0;
   }  
   
@@ -17,7 +19,7 @@
     align-items: stretch;
     width: 80%;
 
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: $breakpoint-mobile-max) {
       flex-direction: column;
       width: 85%;
     }
@@ -27,14 +29,14 @@
     width: 20%;
     text-align: right;
 
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: $breakpoint-mobile-max) {
       width: 100%;
     }
 
     .section-header {
       text-align: right;
 
-      @media screen and (max-width: 420px) {
+      @media screen and (max-width: $breakpoint-mobile-max) {
         text-align: center;
       }
     }
@@ -45,7 +47,7 @@
     font-size: 20px;
     line-height: 26px;
 
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: $breakpoint-mobile-max) {
       width: 100%;
     }
   }

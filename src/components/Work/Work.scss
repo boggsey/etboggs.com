@@ -1,3 +1,5 @@
+@import '../../templates/variables.scss';
+
 #work {
   background: #fdfdfd;
   min-height: 100vh;
@@ -8,7 +10,7 @@
   justify-content: center; 
   position: relative;
 
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: $breakpoint-mobile-max) {
     padding: 40px 0;
   }  
   
@@ -19,13 +21,12 @@
     flex-direction: row;
     align-items: stretch;
 
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: $breakpoint-mobile-max) {
       flex-direction: column;
     } 
   }
 
   h2 {
-    font: 400 30px/25px 'gentium book basic';
     padding-bottom: 30px;
   }
 }
@@ -47,7 +48,7 @@
   justify-content: center;
   cursor: pointer;
 
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: $breakpoint-mobile-max) {
     width: 100%;
     margin-bottom: 20px;
   }  
