@@ -3,7 +3,6 @@ import Helmet from "react-helmet";
 import SEO from "../components/SEO/SEO";
 import Hero from "../components/Hero/Hero";
 import About from "../components/About/About";
-import FeaturedPosts from "../components/FeaturedPosts/FeaturedPosts";
 import PostListing from "../components/PostListing/PostListing";
 import Work from "../components/Work/Work";
 import config from "../../data/SiteConfig";

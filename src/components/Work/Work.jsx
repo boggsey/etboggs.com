@@ -1,28 +1,8 @@
 import React, { Component } from "react";
-import ReactModal from 'react-modal';
-import LogoAvfti from "./logo-avfti.svg";
-import LogoFusion from "./logo-fusion.svg";
-import LogoGdi from "./logo-gdi.svg";
+import ReactModal from "react-modal";
+import * as PropTypes from "prop-types";
 import WorkItem from "../WorkItem/WorkItem";
 import "./Work.scss";
-
-const work = [
-  {
-    name: 'Fusion Alliance',
-    image: LogoFusion,
-    position: 'Web Developer'
-  },
-  {
-    name: 'A Voice for the Innocent',
-    image: LogoAvfti,
-    position: 'Vice President'
-  },
-  {
-    name: 'Girl Develop It',
-    image: LogoGdi,
-    position: 'Instructor'
-  }
-];
 
 const customStyles = {
   content: {
@@ -35,12 +15,21 @@ const customStyles = {
 };
 
 class Work extends Component {
+  
+  static propTypes = {
+    work: PropTypes.shape({
+      icon: PropTypes.object,
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      position: PropTypes.string.isRequired,
+    }).isRequired,
+  }
+
   constructor(props) {
     super(props);
     this.state = {
       showModal: false
     };
-
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
   }
@@ -55,7 +44,7 @@ class Work extends Component {
   }
 
   render() {
-
+    const { icon, id, name, position } = this.props.work
     const workItems = work.map((work,index) =>
       (
         <div key={index.toString()} className="work-item-overview" role="button" onClick={this.handleOpenModal}>
@@ -69,7 +58,7 @@ class Work extends Component {
 
     return (
       <section id="work">
-        <h2 class="section-header">Work</h2>
+        <h2 className="section-header">Work</h2>
         <div className="container">
           {workItems}
         </div>
@@ -88,3 +77,12 @@ class Work extends Component {
 }
 
 export default Work;
+
+export const workFragment = graphql`
+  fragment Work_details on WorkJson {
+    icon
+    id
+    name
+    position
+  }
+`

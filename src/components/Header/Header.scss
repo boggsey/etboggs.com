@@ -5,7 +5,7 @@ header {
 	position: fixed;
 	z-index: 900;
 
-	@media screen and (max-width: 420px) {
+	@media screen and (max-width: $breakpoint-mobile-max) {
 		position: absolute;
 	}  
 
@@ -16,26 +16,6 @@ header {
 		align-items: center;
 		height: 100px;
 		width: 95%;
-	}
-
-	nav {
-		width: 30%;
-		color: #777;
-		text-align: right;
-
-		.return {
-			border-right: 1px solid grey;
-		}
-	
-		a {
-			text-decoration: none;
-			display: block;
-			color: #333;
-			font: 600 16px/20px 'Roboto';
-			text-transform: uppercase;
-			font-weight: 600;
-			padding-right: 5px;
-		}
 	}
 }
 
@@ -51,19 +31,9 @@ header {
 	}
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: $breakpoint-mobile-max) {
   .logo {
 		width: 100%;
 		text-align: center;
-	}
-	
-	nav {
-		text-align: center;
-		width: 100%;
-	}
-
-	nav a {
-		display: inline-block;
-		padding: 0 5px;
 	}
 }

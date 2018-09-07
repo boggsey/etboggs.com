@@ -25,6 +25,7 @@
     "gatsby-remark-prismjs": "^1.2.12",
     "gatsby-remark-responsive-iframe": "^1.4.16",
     "gatsby-source-filesystem": "^1.5.16",
+    "gatsby-transformer-json": "^1.0.20",
     "gatsby-transformer-remark": "^1.7.30",
     "google-maps-react": "^2.0.2",
     "lodash": "^4.17.4",

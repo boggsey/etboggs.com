@@ -4,11 +4,7 @@ import UserLinks from "../UserLinks/UserLinks";
 import "./Contact.scss";
 
 class Contact extends Component {
-
-
   render() {
-    console.log('props', this.props);
-    const { config } = this.props;
     return (
       <section id="contact">
         <div id="map" className="contact-map">
