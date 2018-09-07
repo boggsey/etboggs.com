@@ -1,0 +1,33 @@
+@import '../../templates/variables.scss';
+
+nav {
+  width: 30%;
+  color: #777;
+  text-align: right;
+
+  @media screen and (max-width: $breakpoint-mobile-max) {
+    width: 100%;
+    text-align: center;
+  }
+
+  .return {
+    border-right: 1px solid grey;
+  }
+
+  a {
+    text-decoration: none;
+    display: block;
+    color: #333;
+    font: 600 16px/20px 'Roboto';
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-right: 5px;
+
+    @media screen and (max-width: $breakpoint-mobile-max) {
+      display: inline-block;
+      padding: 0 5px;
+    }
+  }
+}
+
+
