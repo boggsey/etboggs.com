@@ -14,7 +14,7 @@ class Contact extends Component {
         </div>
         <div className="contact-details">
           <h3 className="section-header">Let's Talk</h3>
-          <p>I'm currently employed by Fusion Alliance in Blue Ash, OH. You can find me at an AVFTI space in Covington or Cincinnati, Bow Tie or Coffee Emporium.</p>
+          <p>I'm currently employed by Alchemy in Cincinnati, Ohio. You can find me at the Alchemy offices, an AVFTI space in Covington or Cincinnati or Coffee Emporium.</p>
           <div className="line" />
           <div className="social">
             <UserLinks size="25" config={config} />

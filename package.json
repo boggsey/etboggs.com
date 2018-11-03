@@ -38,6 +38,7 @@
     "react-disqus-comments": "^1.1.1",
     "react-dom": "^16.4.1",
     "react-helmet": "^5.2.0",
+    "react-icons": "3.2.2",
     "react-modal": "^3.4.5",
     "react-share": "^2.0.0",
     "react-twitter-widgets": "^1.7.1",
