@@ -1,7 +1,7 @@
 ---
 title: "Things to consider before starting a nonprofit"
 cover: "https://unsplash.it/400/300/?random?BoldMage"
-date: "06/27/2018"
+date: "11/02/2018"
 category: "nonprofit"
 tags:
     - nonprofit

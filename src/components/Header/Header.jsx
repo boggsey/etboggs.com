@@ -6,7 +6,6 @@ import "./Header.scss";
 class Header extends Component {
 
   render() {
-    const { config } = this.props;
     return (
       <header>
         <div className="container">

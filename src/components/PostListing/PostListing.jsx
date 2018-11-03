@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "gatsby-link";
+import { Link } from "gatsby";
 import "./PostListing.scss";
 
 class PostListing extends React.Component {
@@ -11,7 +11,7 @@ class PostListing extends React.Component {
         tags: postEdge.node.frontmatter.tags,
         cover: postEdge.node.frontmatter.cover,
         title: postEdge.node.frontmatter.title,
-        date: postEdge.node.frontmatter.date,
+        date: postEdge.node.fields.date,
         excerpt: postEdge.node.excerpt,
         timeToRead: postEdge.node.timeToRead
       });
@@ -30,13 +30,13 @@ class PostListing extends React.Component {
             {/* Your post list here. */
             postList.map(post => (
               <div>
-              <Link key="" to={post.path} key={post.title}>
-                <h1>{post.title}</h1>
-              </Link>
-              <p>{post.excerpt}</p>
-              <Link to={post.path} key="1">
-                <p>Read more</p>
-              </Link>
+                <Link key="" to={post.path} key={post.title}>
+                  <h1>{post.title}</h1>
+                </Link>
+                <p>{post.excerpt}</p>
+                <Link to={post.path} key="1">
+                  <p>Read more</p>
+                </Link>
               </div>
             ))}
           </article>

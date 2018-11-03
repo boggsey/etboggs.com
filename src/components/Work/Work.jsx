@@ -15,15 +15,6 @@ const customStyles = {
 };
 
 class Work extends Component {
-  
-  static propTypes = {
-    work: PropTypes.shape({
-      icon: PropTypes.object,
-      id: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-      position: PropTypes.string.isRequired,
-    }).isRequired,
-  }
 
   constructor(props) {
     super(props);
@@ -44,7 +35,8 @@ class Work extends Component {
   }
 
   render() {
-    const { icon, id, name, position } = this.props.work
+    console.log('work', this.props);
+
     const workItems = work.map((work,index) =>
       (
         <div key={index.toString()} className="work-item-overview" role="button" onClick={this.handleOpenModal}>
@@ -60,7 +52,7 @@ class Work extends Component {
       <section id="work">
         <h2 className="section-header">Work</h2>
         <div className="container">
-          {workItems}
+          {{workItems}}
         </div>
         <ReactModal
           isOpen={this.state.showModal}
@@ -77,12 +69,3 @@ class Work extends Component {
 }
 
 export default Work;
-
-export const workFragment = graphql`
-  fragment Work_details on WorkJson {
-    icon
-    id
-    name
-    position
-  }
-`

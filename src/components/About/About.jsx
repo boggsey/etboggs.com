@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import UserLinks from "../UserLinks/UserLinks";
+import config from "../../../data/SiteConfig";
 import "./About.scss";
 
 class About extends Component {
@@ -14,7 +15,7 @@ class About extends Component {
             
             <p>Since then, I've committed to a life-long pursuit of learning, sharing and crafting of technology. I spend half of my time building it for profit (P&amp;G, Mars, ConAgra, Ford and Eli Lilly) and the other half focused on technology that improves people's lives. In 2012, I helped co-create a nonprofit organization that helps those affected by sexual violence. I've traveled the entire United States to share a message of hope and healing through compassion, discussion, empathy and understanding. You can also find me teaching classes for Girl Develop It Cincinnati.</p>
             <div className="social">
-              <UserLinks size="20" />
+              <UserLinks size="20" config={config} />
             </div>
           </div>
           <div className="about-image">

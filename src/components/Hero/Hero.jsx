@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Background from "./forest.png";
 import "./Hero.scss";
 
-var sectionStyle = {
+const sectionStyle = {
   backgroundImage: `url(${Background})`
 };
 

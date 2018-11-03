@@ -10,9 +10,11 @@
 
 A blog starter skeleton with advanced features for [Gatsby](https://github.com/gatsbyjs/gatsby/).
 
+**NOTE**: This branch contains Gatsby v2 compatible version of the starter. To get the Gatsby v1 compatible version, use the [`v1`](https://github.com/Vagr9K/gatsby-advanced-starter/tree/v1) branch.
+
 ## Why?
 
-This project aims to provide a minimal for building GatsbyJS powered blogs.
+This project aims to provide a minimal base for building advanced GatsbyJS powered blogs.
 
 It doesn't define any UI limitations in any way, and only gives you the basic components for SEO/Social Media/etc.
 
@@ -30,56 +32,59 @@ If you are interested in a foundation for building ultra-fast websites, you can 
 
 ## Features
 
-* Blazing fast loading times thanks to pre-rendered HTML and automatic chunk loading of JS files
-* Separate components for everything
-* High configurability:
-  * User information
-  * User social profiles
-  * Copyright information
-  * More!
-* Author segment
-  * Name
-  * Location
-  * Description
-  * Links
-  * Follow Me button
-* Posts in Markdown
-  * Code syntax highlighting
-  * Embed YouTube videos
-  * Embed Tweets
-* Tags
-  * Separate page for posts under each tag
-* Categories
-  * Separate page for posts under each category
-* Disqus support
-  * Notifications about new disqus comments
-* Google Analytics support
-* NPM scripts for GitHub Pages deployment
-* Social features
-  * Twitter tweet button
-  * Facebook share/share count
-  * Reddit share/share count
-  * Google+ share button
-  * LinkedIn share button
-  * Telegram share button
-* SEO
-  * Sitemap generation
-  * robots.txt
-  * General description tags
-  * Schema.org JSONLD (Google Rich Snippets)
-  * OpenGraph Tags (Facebook/Google+/Pinterest)
-  * Twitter Tags (Twitter Cards)
-* RSS feeds
-* Loading progress for slow networks
-* Offline support
-* Web App Manifest support
-* Development tools
-  * ESLint for linting
-  * Prettier for code style
-  * Remark-Lint for linting Markdown
-  * write-good for linting English prose
-  * gh-pages for deploying to GitHub pages
-  * CodeClimate configuration file and badge
+- Gatsby v2 support
+- Blazing fast loading times thanks to pre-rendered HTML and automatic chunk loading of JS files
+- Separate components for everything
+- High configurability:
+  - User information
+  - User social profiles
+  - Copyright information
+  - More!
+- Author segment
+  - Name
+  - Location
+  - Description
+  - Links
+  - Follow Me button
+- Posts in Markdown
+  - Code syntax highlighting
+  - Embed YouTube videos
+  - Embed Tweets
+- Tags
+  - Separate page for posts under each tag
+- Categories
+  - Separate page for posts under each category
+- Disqus support
+  - Notifications about new disqus comments
+- Google Analytics support
+- NPM scripts for GitHub Pages deployment
+- Social features
+  - Twitter tweet button
+  - Facebook share/share count
+  - Reddit share/share count
+  - Google+ share button
+  - LinkedIn share button
+  - Telegram share button
+- SEO
+  - Sitemap generation
+  - robots.txt
+  - General description tags
+  - Schema.org JSONLD (Google Rich Snippets)
+  - OpenGraph Tags (Facebook/Google+/Pinterest)
+  - Twitter Tags (Twitter Cards)
+- RSS feeds
+- Loading progress for slow networks
+- Offline support
+- Web App Manifest support
+- `/static/` and content folders are available to use with `gatsby-image` out of the box
+- Netlify deploy configuration
+- Development tools
+  - ESLint for linting
+  - Prettier for code style
+  - Remark-Lint for linting Markdown
+  - write-good for linting English prose
+  - gh-pages for deploying to GitHub pages
+  - CodeClimate configuration file and badge
 
 NOTE: Feel free to check out [Gatsby Material Starter](https://github.com/Vagr9K/gatsby-material-starter) if you are interested in a more opinionated starter with Material Design in mind.
 
@@ -110,18 +115,20 @@ Edit the export object in `data/SiteConfig`:
 
 ```js
 module.exports = {
-  blogPostDir: "sample-posts", // The name of directory that contains your posts.
   siteTitle: "Gatsby Advanced Starter", // Site title.
+  siteTitleShort: "GA Starter", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "GatsbyJS Advanced Starter", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
   siteUrl: "https://vagr9k.github.io", // Domain of your website without pathPrefix.
   pathPrefix: "/gatsby-advanced-starter", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
-  siteDescription:
-    "A blog starter skeleton with advanced features for for GatsbyJS", // Website description used for RSS feeds/meta description tag.
+  siteDescription: "A GatsbyJS stater with Advanced design in mind.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "1825356251115265", // FB Application ID for using app insights
+  googleAnalyticsID: "UA-47311644-5", // GA tracking ID.
   disqusShortname: "https-vagr9k-github-io-gatsby-advanced-starter", // Disqus shortname.
   postDefaultCategoryID: "Tech", // Default category for posts.
+  dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
+  dateFormat: "DD/MM/YYYY", // Date format for display.
   userName: "Advanced User", // Username to display in the author segment.
   userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "North Pole, Earth", // User location to display in the author segment.
