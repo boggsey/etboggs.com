@@ -4,7 +4,6 @@ import Nav from "./../Nav/Nav";
 import "./Header.scss";
 
 class Header extends Component {
-
   render() {
     return (
       <header>
@@ -12,7 +11,9 @@ class Header extends Component {
           <div className="logo">
             <Link
               to="/"
-              innerRef={(el) => { this.myLink = el }}
+              innerRef={el => {
+                this.myLink = el;
+              }}
             >
               EB
             </Link>

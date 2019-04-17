@@ -35,7 +35,15 @@ module.exports = {
         path: `${__dirname}/content/`
       }
     },
-    
+    "gatsby-transformer-json",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `./data`,
+        name: `data`,
+        typeName: `Json`
+      }
+    },
     {
       resolve: "gatsby-transformer-remark",
       options: {
@@ -69,6 +77,7 @@ module.exports = {
       }
     },
     "gatsby-plugin-sass",
+    "gatsby-plugin-styled-components",
     "gatsby-plugin-sharp",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-twitter",

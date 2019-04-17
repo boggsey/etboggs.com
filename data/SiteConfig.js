@@ -28,7 +28,7 @@ module.exports = {
     {
       label: "Twitter",
       url: "https://twitter.com/etboggs",
-      socialIcon: "social-twitter" 
+      socialIcon: "social-twitter"
     },
     {
       label: "Linkedin",

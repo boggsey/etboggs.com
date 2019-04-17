@@ -1,68 +1,68 @@
 [
-    {
-      "id": "1",
-      "name": "Fusion Alliance",
-      "position": "Web Developer",
-      "mission": "A Voice for the Innocent is a non-profit community dedicated to the support of those affected by rape and sexual abuse. We are a safe and compassionate space to come forward about your story and we use music and technology to provide access to long term resources.",
-      "summary": [
-        {
-          "text": "Careful development and maintenance of the front end of Eli Lilly’s Direct to Consumer and Health Care Provider product websites while working with multiple creative agencies, project owners and legal reviewers."
-        },
-        {
-          "text": "Use of web technologies including version control (Git), package managers (NPM, Yarn), task automation (Webpack, Gulp), CSS preprocessors (SASS), templating engines (Handlebars) and use of Javascript frameworks (React, Vue). "
-        },
-        {
-          "text": "Contributing to other projects which include email development (Custom Foundation builds) and marketing banners (Google Web Designer)."
-        }
-      ],
-      "icon": "./logo-fusion.svg",
-      "image": "images/BdiU-TTFP4h.jpg"
-    },
-    {
-      "id": "2",
-      "name": "A Voice for the Innocent",
-      "position": "Co-Founder",
-      "mission": "A Voice for the Innocent is a non-profit community dedicated to the support of those affected by rape and sexual abuse. We are a safe and compassionate space to come forward about your story and we use music and technology to provide access to long term resources.",
-      "summary": [
-        {
-          "heading": "Co-Founder",
-          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s"
-        },
-        {
-          "heading": "Technology",
-          "text": "Development, maintenance and deployment of the organization’s website and storytelling platform with an average of 18,000 monthly visitors."
-        },
-        {
-          "heading": "Strategy",
-          "text": "Responsible for strategies and partnerships that further the mission of a national anti-sexual violence non-profit, including outreach and fundraising efforts spanning 30 states"
-        }
-      ],
-      "icon": "./logo-avfti.svg",
-      "image": "images/BdiU-TTFP4h.jpg"
-    },
-    {
-      "id": "3",
-      "name": "Girl Develop It",
-      "position": "Instructor",
-      "mission": "Girl Develop It is a nonprofit organization that provides affordable programs for adult women interested in learning web and software development in a judgment-free environment.",
-      "summary": [
-        {
-          "heading": "Co-Founder",
-          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s"
-        },
-        {
-          "heading": "Technology",
-          "text": "Instructed over 140 students on web development technologies and principles across over 50 working sessions."
-        },
-        {
-          "heading": "Strategy",
-          "text": "Responsible for strategies and partnerships that further the mission of a national anti-sexual violence non-profit, including outreach and fundraising efforts spanning 30 states"
-        }
-      ],
-      "icon": "./logo-gdi.svg",
-      "image": "images/BdiU-TTFP4h.jpg"
-    }
-  ]
+  {
+    "id": "1",
+    "name": "Alchemy",
+    "position": "Web Developer",
+    "mission": "A Voice for the Innocent is a non-profit community dedicated to the support of those affected by rape and sexual abuse. We are a safe and compassionate space to come forward about your story and we use music and technology to provide access to long term resources.",
+    "summary": [
+      {
+        "text": "Careful development and maintenance of the front end of Eli Lillys Direct to Consumer and Health Care Provider product websites while working with multiple creative agencies, project owners and legal reviewers."
+      },
+      {
+        "text": "Use of web technologies including version control (Git), package managers (NPM, Yarn), task automation (Webpack, Gulp), CSS preprocessors (SASS), templating engines (Handlebars) and use of Javascript frameworks (React, Vue). "
+      },
+      {
+        "text": "Contributing to other projects which include email development (Custom Foundation builds) and marketing banners (Google Web Designer)."
+      }
+    ],
+    "icon": "./logo-alchemy.svg",
+    "image": "images/BdiU-TTFP4h.jpg"
+  },
+  {
+    "id": "2",
+    "name": "A Voice for the Innocent",
+    "position": "Co-Founder",
+    "mission": "A Voice for the Innocent is a non-profit community dedicated to the support of those affected by rape and sexual abuse. We are a safe and compassionate space to come forward about your story and we use music and technology to provide access to long term resources.",
+    "summary": [
+      {
+        "heading": "Co-Founder",
+        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s"
+      },
+      {
+        "heading": "Technology",
+        "text": "Development, maintenance and deployment of the organizations website and storytelling platform with an average of 18,000 monthly visitors."
+      },
+      {
+        "heading": "Strategy",
+        "text": "Responsible for strategies and partnerships that further the mission of a national anti-sexual violence non-profit, including outreach and fundraising efforts spanning 30 states"
+      }
+    ],
+    "icon": "./logo-avfti.svg",
+    "image": "images/BdiU-TTFP4h.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Girl Develop It",
+    "position": "Instructor",
+    "mission": "Girl Develop It is a nonprofit organization that provides affordable programs for adult women interested in learning web and software development in a judgment-free environment.",
+    "summary": [
+      {
+        "heading": "Co-Founder",
+        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s"
+      },
+      {
+        "heading": "Technology",
+        "text": "Instructed over 140 students on web development technologies and principles across over 50 working sessions."
+      },
+      {
+        "heading": "Strategy",
+        "text": "Responsible for strategies and partnerships that further the mission of a national anti-sexual violence non-profit, including outreach and fundraising efforts spanning 30 states"
+      }
+    ],
+    "icon": "./logo-gdi.svg",
+    "image": "images/BdiU-TTFP4h.jpg"
+  }
+]
   
   
   

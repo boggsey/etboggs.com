@@ -6,6 +6,7 @@ import PostListing from "../components/PostListing/PostListing";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 import Hero from "../components/Hero/Hero";
+import Work from "../components/Work/Work";
 import About from "../components/About/About";
 
 class Index extends React.Component {
@@ -18,6 +19,7 @@ class Index extends React.Component {
           <SEO />
           <Hero />
           <About />
+          <Work />
           <PostListing postEdges={postEdges} />
         </div>
       </Layout>

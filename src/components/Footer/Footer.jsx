@@ -7,7 +7,6 @@ class Footer extends Component {
     return (
       <footer className="footer">
         <Nav />
-        <p className="made-with">Made in Cincinnati with amusement &amp; mild annoyance</p>
       </footer>
     );
   }

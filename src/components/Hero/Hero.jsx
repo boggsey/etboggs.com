@@ -10,13 +10,19 @@ class Hero extends Component {
   render() {
     return (
       <section className="hero" style={sectionStyle}>
-        <ul>
-          <li>Web Developer.</li>
-          <li>Non-profit Cofounder.</li>
-          <li>Tech Instructor.</li>
-        </ul>
-        <h2 className="name">Hello! I'm Eric Bog<span className="kern">g</span>s, a Cincinnati native and Marine Corps Veteran that is dedicated to social good.</h2>
-        <a className="learn-more" href="#about">Learn More</a>
+        <h2 className="name">
+          Hello! I'm Eric Bog
+          <span className="kern">g</span>s
+        </h2>
+        <p>
+          I'm a developer, nonprofit cofounder and Marine Corps Veteran that is
+          dedicated to social good. I currently work at Alchemy (a P&amp;G
+          company) and serve on the board of A Voice for the Innocent, a
+          nonprofit dedicated to helping those affected by sexual violence.
+        </p>
+        <a className="learn-more" href="#about">
+          Learn More
+        </a>
       </section>
     );
   }

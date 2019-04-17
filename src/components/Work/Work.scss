@@ -1,7 +1,7 @@
 @import '../../templates/variables.scss';
 
 #work {
-  background: #fdfdfd;
+  background: #2d2e36;
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -15,7 +15,7 @@
   }  
   
   .container {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -37,16 +37,27 @@
 
 .work-item-overview {
   position: relative;
-  border: 1px solid #999;
-  width: 30%;
-  height: 50vh;
+  width: 33.3%;
+  height: 100vh;
   padding: 10px;
-  color: #333;
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  border-right: 1px solid #1d1e22;
+
+  &:last-of-type {
+    border-right: 0px;
+  }
+
+  &:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 500ms linear;
+    transition: color 500ms linear;
+  }
 
   @media screen and (max-width: $breakpoint-mobile-max) {
     width: 100%;
@@ -77,6 +88,7 @@
   .icon {
     text-align: center;
     width: 50px;
+    fill: white;
   }
 }
 
