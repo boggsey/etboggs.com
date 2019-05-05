@@ -1,12 +1,81 @@
 import React, { Component } from "react";
+import styled from "react-emotion";
 import UserLinks from "../UserLinks/UserLinks";
 import config from "../../../data/SiteConfig";
-import "./About.scss";
+
+const AboutWrapper = styled.section`
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+
+  @media screen and (max-width: $breakpoint-mobile-max) {
+    padding: 40px 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
+    width: 80%;
+
+    @media screen and (max-width: $breakpoint-mobile-max) {
+      flex-direction: column;
+      width: 85%;
+    }
+  }
+
+  h2 {
+    margin: 0;
+
+    @media screen and (max-width: $breakpoint-mobile-max) {
+      text-align: center;
+      padding: 20px 0;
+      margin: 0;
+    }
+  }
+
+  .about-image {
+    width: 400px;
+
+    @media screen and (max-width: $breakpoint-mobile-max) {
+      width: 100%;
+      order: 1;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .full-description {
+    width: 50%;
+    font-size: 18px;
+    line-height: 1.5em;
+
+    @media screen and (max-width: $breakpoint-mobile-max) {
+      width: 100%;
+      order: 2;
+    }
+  }
+
+  .social {
+    a {
+      width: auto;
+      display: inline-block;
+      padding-right: 10px;
+      color: $body-copy-dark;
+    }
+  }
+`;
 
 class About extends Component {
   render() {
     return (
-      <section id="about">
+      <AboutWrapper id="about">
         <div className="container">
           <div className="full-description">
             <h2 className="section-header">About</h2>
@@ -41,7 +110,7 @@ class About extends Component {
             <img src="http://placehold.it/400x400" alt="" />
           </div>
         </div>
-      </section>
+      </AboutWrapper>
     );
   }
 }

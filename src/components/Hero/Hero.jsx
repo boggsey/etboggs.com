@@ -10,10 +10,7 @@ class Hero extends Component {
   render() {
     return (
       <section className="hero" style={sectionStyle}>
-        <h2 className="name">
-          Hello! I'm Eric Bog
-          <span className="kern">g</span>s
-        </h2>
+        <h2 className="name">Eric Boggs</h2>
         <p>
           I'm a developer, nonprofit cofounder and Marine Corps Veteran that is
           dedicated to social good. I currently work at Alchemy (a P&amp;G

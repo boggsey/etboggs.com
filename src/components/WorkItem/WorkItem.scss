@@ -10,9 +10,10 @@
   width: 100%;
   display: flex;
   flex-flow: row wrap;
+  position: absolute;
 
   .container {
-    width: 90%; 
+    width: 90%;
     display: flex;
     margin: 0;
     justify-content: space-between;
@@ -23,7 +24,7 @@
       flex-direction: column;
       width: 100%;
       position: absolute;
-    } 
+    }
   }
 
   h2 {

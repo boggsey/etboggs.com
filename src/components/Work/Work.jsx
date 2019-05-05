@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import { StaticQuery, graphql } from "gatsby";
 import * as PropTypes from "prop-types";
-import WorkItem from "../WorkItem/WorkItem";
+import Alchemy from "../WorkItem/Alchemy";
+import Avfti from "../WorkItem/Avfti";
+import Gdi from "../WorkItem/Gdi";
 import "./Work.scss";
 
 const customStyles = {
@@ -20,13 +22,25 @@ class Work extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "Eric"
+      work: "default"
     };
     this.handleButtonClick = this.handleButtonClick.bind(this);
   }
 
-  handleButtonClick() {
-    this.setState({ name: "Kelly" });
+  handleButtonClick(itemName) {
+    this.setState({ work: itemName });
+    this.renderWorkItem();
+  }
+
+  renderWorkItem() {
+    if (this.state.work === "Alchemy") {
+      return <Alchemy action={this.handleButtonClick} />;
+    } else if (this.state.work === "A Voice for the Innocent") {
+      return <Avfti action={this.handleButtonClick} />;
+    } else if (this.state.work === "Girl Develop It") {
+      return <Gdi action={this.handleButtonClick} />;
+    }
+    return null;
   }
 
   render() {
@@ -61,6 +75,9 @@ class Work extends Component {
                     key={item.id}
                     className="work-item-overview"
                     role="button"
+                    onClick={() => {
+                      this.handleButtonClick(item.name);
+                    }}
                   >
                     <h3>{item.name}</h3>
                     <p className="position">{item.position}</p>
@@ -71,7 +88,8 @@ class Work extends Component {
             }}
           />
         </div>
-        <WorkItem />
+
+        {this.renderWorkItem()}
       </section>
     );
   }

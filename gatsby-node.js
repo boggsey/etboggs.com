@@ -5,6 +5,11 @@ const siteConfig = require("./data/SiteConfig");
 
 const postNodes = [];
 
+exports.onCreateBabelConfig = ({ actions: { setBabelPlugin } }) => {
+  setBabelPlugin({ name: "babel-plugin-tailwind" });
+  setBabelPlugin({ name: "babel-plugin-emotion" });
+};
+
 function addSiblingNodes(createNodeField) {
   postNodes.sort(
     ({ frontmatter: { date: date1 } }, { frontmatter: { date: date2 } }) => {

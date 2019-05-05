@@ -20,6 +20,7 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-emotion",
     "gatsby-plugin-lodash",
     {
       resolve: "gatsby-source-filesystem",
@@ -77,7 +78,6 @@ module.exports = {
       }
     },
     "gatsby-plugin-sass",
-    "gatsby-plugin-styled-components",
     "gatsby-plugin-sharp",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-twitter",
