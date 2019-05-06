@@ -1,3 +1,4 @@
+/* global tw */
 import React from "react";
 import styled from "react-emotion";
 import MapContainer from "../MapContainer/MapContainer";
@@ -5,42 +6,26 @@ import config from "../../../data/SiteConfig";
 import UserLinks from "../UserLinks/UserLinks";
 
 const ContactWrapper = styled.section`
+  ${tw(
+    "w-full justify-between items-center flex flex-col md:flex-row min-h-screen text-white"
+  )};
   background-color: #212121;
   min-height: 50vh;
-  display: flex;
-  flex-flow: row-wrap;
-  justify-content: space-between;
-  color: white;
-
-  @media screen and (max-width: $breakpoint-mobile-max) {
-    flex-direction: column;
-  }
 
   .contact-map {
-    width: 50%;
-    position: relative;
-
-    @media screen and (max-width: $breakpoint-mobile-max) {
-      order: 2;
-      width: 100%;
-      min-height: 50vh;
-    }
+    ${tw("w-full md:w-1/2 relative")};
+    min-height: 50vh;
   }
 
   .contact-details {
-    width: 50%;
-    text-align: right;
+    ${tw(
+      "w-full md:w-1/2 flex flex-col items-center md:items-end justify-center text-center md:text-right"
+    )};
     padding: 30px 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
 
     @media screen and (max-width: $breakpoint-mobile-max) {
       order: 1;
-      width: 100%;
       min-height: 50vh;
-      text-align: center;
     }
 
     .section-header {
@@ -53,8 +38,8 @@ const ContactWrapper = styled.section`
     }
 
     p {
+      ${tw("w-4/5")};
       color: #666;
-      width: 80%;
       font: 400 14px/22px "Roboto";
     }
 
@@ -70,18 +55,12 @@ const ContactWrapper = styled.section`
     }
 
     .social {
-      text-transform: uppercase;
+      ${tw("w-full uppercase")};
       padding: 20px 0;
 
-      @media screen and (max-width: $breakpoint-mobile-max) {
-        width: 100%;
-      }
-
       a {
-        width: auto;
-        display: inline-block;
+        ${tw("w-auto inline-block text-white")};
         padding-left: 10px;
-        color: $body-copy-light;
       }
     }
   }

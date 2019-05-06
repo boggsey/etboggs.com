@@ -3,14 +3,11 @@ import React, { Component } from "react";
 import styled from "react-emotion";
 import Background from "../../images/forest.png";
 
-const sectionStyle = {
-  backgroundImage: `url(${Background})`
-};
-
 const HeroWrapper = styled.section`
   ${tw(
     "w-full justify-center items-center flex flex-col min-h-screen text-white bg-cover"
   )};
+  background-image: url(${Background});
 
   p {
     ${tw("w-4/5 md:w-2/5 text-center")};
@@ -38,7 +35,7 @@ const HeroWrapper = styled.section`
 class Hero extends Component {
   render() {
     return (
-      <HeroWrapper style={sectionStyle}>
+      <HeroWrapper>
         <h2 className="name">Eric Boggs</h2>
         <p>
           I&apos;m a developer, nonprofit cofounder and Marine Corps Veteran
