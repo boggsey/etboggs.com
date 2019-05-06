@@ -1,11 +1,33 @@
+/* global tw */
 import React, { Component } from "react";
+import styled from "react-emotion";
 import Link from "gatsby-link";
-import "./Nav.scss";
+
+const NavWrapper = styled.nav`
+  ${tw("w-full md:w-1/3 text-center")};
+  color: #777;
+
+  a {
+    ${tw(
+      "no-underline inline-block md:block uppercase text-center md:text-right pr-4 pl-4 md:pr-0"
+    )};
+
+    &:first-of-type {
+      ${tw("pl-0 pr-0")};
+    }
+
+    &:last-of-type {
+      ${tw("pr-0 pl-0")};
+    }
+    color: #333;
+    font: 600 16px/20px "Roboto";
+  }
+`;
 
 class Nav extends Component {
   render() {
     return (
-      <nav>
+      <NavWrapper>
         <div className="primary-nav">
           <Link
             to="/#about"
@@ -32,7 +54,7 @@ class Nav extends Component {
             writing
           </Link>
         </div>
-      </nav>
+      </NavWrapper>
     );
   }
 }
