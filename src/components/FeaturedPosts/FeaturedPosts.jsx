@@ -32,7 +32,6 @@ export default class FeaturedPosts extends Component {
               <SocialLinks postPath={slug} postNode={postNode} />
             </div>
             <UserInfo config={config} />
-            <Disqus postNode={postNode} />
 
             <h3>Before you start a nonprofit</h3>
             <p>
