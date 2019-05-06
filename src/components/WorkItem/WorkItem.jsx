@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import WorkItemPicture from "./avfti-strength.jpg";
+import WorkItemPicture from "../../images/avfti-strength.jpg";
 import "./WorkItem.scss";
 
 const sectionStyle = {

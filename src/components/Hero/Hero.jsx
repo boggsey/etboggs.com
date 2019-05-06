@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Background from "./forest.png";
+import Background from "../../images/forest.png";
 import "./Hero.scss";
 
 const sectionStyle = {
