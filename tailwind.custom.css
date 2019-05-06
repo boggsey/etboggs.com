@@ -3364,6 +3364,10 @@ table {
   width: 30%;
 }
 
+.w-90p {
+  width: 90%;
+}
+
 .w-95p {
   width: 95%;
 }
@@ -6142,6 +6146,10 @@ table {
 
   .sm\:w-30p {
     width: 30%;
+  }
+
+  .sm\:w-90p {
+    width: 90%;
   }
 
   .sm\:w-95p {
@@ -8925,6 +8933,10 @@ table {
     width: 30%;
   }
 
+  .md\:w-90p {
+    width: 90%;
+  }
+
   .md\:w-95p {
     width: 95%;
   }
@@ -11704,6 +11716,10 @@ table {
 
   .lg\:w-30p {
     width: 30%;
+  }
+
+  .lg\:w-90p {
+    width: 90%;
   }
 
   .lg\:w-95p {
@@ -14487,6 +14503,10 @@ table {
     width: 30%;
   }
 
+  .xl\:w-90p {
+    width: 90%;
+  }
+
   .xl\:w-95p {
     width: 95%;
   }
@@ -17266,6 +17286,10 @@ table {
 
   .xxl\:w-30p {
     width: 30%;
+  }
+
+  .xxl\:w-90p {
+    width: 90%;
   }
 
   .xxl\:w-95p {
