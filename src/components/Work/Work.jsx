@@ -88,7 +88,9 @@ class Work extends Component {
             }}
           />
         </div>
-
+        <Alchemy />
+        <Avfti />
+        <Gdi />
         {this.renderWorkItem()}
       </section>
     );
