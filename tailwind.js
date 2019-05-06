@@ -50,7 +50,7 @@ const colors = {
   primary: "#00a1df",
   heading: "#0b163a",
   body: "#999",
-  bodyDark: "#222222"
+  black: "#222222"
 };
 
 module.exports = {
@@ -357,8 +357,10 @@ module.exports = {
     "1/6": "16.66667%",
     "5/6": "83.33333%",
     "30p": "30%",
+    "95p": "95%",
     full: "100%",
-    screen: "100vw"
+    screen: "100vw",
+    "45px": "45px"
   },
 
   /*
@@ -394,6 +396,8 @@ module.exports = {
     "64": "16rem",
     full: "100%",
     screen: "100vh",
+    "45px": "45px",
+    "100px": "100px",
     "300px": "300px",
     "500px": "500px"
   },
