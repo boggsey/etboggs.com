@@ -1,6 +1,40 @@
+/* global tw */
 import React from "react";
+import styled from "react-emotion";
 import { Link } from "gatsby";
-import "./PostListing.scss";
+
+const WritingWrapper = styled.section`
+  ${tw(
+    "w-full min-h-screen justify-center items-center flex flex-col pt-8 pb-8"
+  )};
+
+  .container {
+    ${tw(
+      "w-5/6 md:w-3/4 justify-between items-stretch flex flex-col md:flex-row"
+    )};
+  }
+
+  .writing-list {
+    ${tw("w-full md:w-1/5 text-right")};
+
+    .section-header {
+      ${tw("text-center md:text-right")};
+    }
+  }
+
+  article {
+    ${tw("w-3/4 text-xl leading-normal")};
+
+    h1 {
+      ${tw("leading-loose tracking-wide")};
+      font-family: Alegreya;
+    }
+
+    a {
+      ${tw("w-full text-black no-underline")};
+    }
+  }
+`;
 
 class PostListing extends React.Component {
   getPostList() {
@@ -21,7 +55,7 @@ class PostListing extends React.Component {
   render() {
     const postList = this.getPostList();
     return (
-      <div id="writing">
+      <WritingWrapper id="writing">
         <div className="container">
           <div className="writing-list">
             <h2 className="section-header">Writing</h2>
@@ -41,7 +75,7 @@ class PostListing extends React.Component {
             ))}
           </article>
         </div>
-      </div>
+      </WritingWrapper>
     );
   }
 }

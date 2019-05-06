@@ -8,7 +8,6 @@ const sectionStyle = {
 
 class Alchemy extends Component {
   render() {
-    const { action } = this.props;
     return (
       <section className="work-item-individual alchemy">
         <div className="container">
