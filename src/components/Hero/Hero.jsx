@@ -1,21 +1,20 @@
-/* global tw */
 import React, { Component } from "react";
-import styled from "react-emotion";
+import styled from "styled-components";
+import tw from "tailwind.macro";
 import Background from "../../images/forest.png";
 
 const HeroWrapper = styled.section`
-  ${tw(
-    "w-full justify-center items-center flex flex-col min-h-screen text-white bg-cover"
-  )};
+  ${tw`w-full justify-center items-center flex flex-col min-h-screen text-white`};
   background-image: url(${Background});
+  background-size: cover;
 
   p {
-    ${tw("w-4/5 md:w-2/5 text-center mt-0")};
+    ${tw`w-4/5 md:w-2/5 text-center mt-0`};
     font-size: 20px;
   }
 
   .name {
-    ${tw("w-full md:w-3/4 text-center m0 uppercase leading-normal m0")};
+    ${tw`w-full md:w-3/4 text-center m0 uppercase leading-normal m0`};
     font: 700 24px/24px "Roboto";
 
     @media screen and (max-width: 420px) {
@@ -24,9 +23,7 @@ const HeroWrapper = styled.section`
   }
 
   .learn-more {
-    ${tw(
-      "text-center text-white border-white border-solid border-2 uppercase no-underline"
-    )};
+    ${tw`text-center text-white border-white border-solid border-2 uppercase no-underline`};
     padding: 10px 20px;
     font-family: "Roboto";
   }

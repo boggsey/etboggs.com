@@ -1,26 +1,22 @@
-/* global tw */
 import React from "react";
-import styled from "react-emotion";
+import styled from "styled-components";
+import tw from "tailwind.macro";
 import MapContainer from "../MapContainer/MapContainer";
 import config from "../../../data/SiteConfig";
 import UserLinks from "../UserLinks/UserLinks";
 
 const ContactWrapper = styled.section`
-  ${tw(
-    "w-full justify-between items-center flex flex-col md:flex-row min-h-screen text-white"
-  )};
+  ${tw`w-full justify-between items-center flex flex-col md:flex-row min-h-screen text-white`};
   background-color: #212121;
   min-height: 50vh;
 
   .contact-map {
-    ${tw("w-full md:w-1/2 relative")};
+    ${tw`w-full md:w-1/2 relative`};
     min-height: 50vh;
   }
 
   .contact-details {
-    ${tw(
-      "w-full md:w-1/2 flex flex-col items-center md:items-end justify-center text-center md:text-right"
-    )};
+    ${tw`w-full md:w-1/2 flex flex-col items-center md:items-end justify-center text-center md:text-right`};
     padding: 30px 5%;
 
     @media screen and (max-width: $breakpoint-mobile-max) {
@@ -38,7 +34,7 @@ const ContactWrapper = styled.section`
     }
 
     p {
-      ${tw("w-4/5")};
+      ${tw`w-4/5`};
       color: #666;
       font: 400 14px/22px "Roboto";
     }
@@ -55,11 +51,11 @@ const ContactWrapper = styled.section`
     }
 
     .social {
-      ${tw("w-full uppercase justify-end")};
+      ${tw`w-full uppercase justify-end`};
       padding: 20px 0;
 
       a {
-        ${tw("w-auto inline-block text-white")};
+        ${tw`w-auto inline-block text-white`};
         padding-left: 10px;
       }
     }

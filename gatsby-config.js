@@ -20,7 +20,6 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-emotion",
     "gatsby-plugin-lodash",
     {
       resolve: "gatsby-source-filesystem",
@@ -36,19 +35,9 @@ module.exports = {
         path: `${__dirname}/content/`
       }
     },
-    "gatsby-transformer-json",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `./data`,
-        name: `data`,
-        typeName: `Json`
-      }
-    },
     {
       resolve: "gatsby-transformer-remark",
       options: {
-        excerpt_separator: `<!-- end -->`,
         plugins: [
           {
             resolve: "gatsby-remark-images",
@@ -82,6 +71,7 @@ module.exports = {
     "gatsby-plugin-catch-links",
     "gatsby-plugin-twitter",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-styled-components",
     {
       resolve: "gatsby-plugin-manifest",
       options: {

@@ -1,40 +1,36 @@
-/* global tw */
 import React from "react";
-import styled from "react-emotion";
+import styled from "styled-components";
+import tw from "tailwind.macro";
 import { Link } from "gatsby";
 
 const WritingWrapper = styled.section`
-  ${tw(
-    "w-full min-h-screen justify-center items-center flex flex-col pt-8 pb-8"
-  )};
+  ${tw`w-full min-h-screen justify-center items-center flex flex-col pt-8 pb-8`};
 
   .container {
-    ${tw(
-      "w-5/6 md:w-3/4 justify-between items-stretch flex flex-col md:flex-row"
-    )};
+    ${tw`w-5/6 md:w-3/4 justify-between items-stretch flex flex-col md:flex-row`};
   }
 
   .writing-list {
-    ${tw("w-full md:w-1/5 text-right")};
+    ${tw`w-full md:w-1/5 text-right`};
 
     .section-header {
-      ${tw("text-center md:text-right")};
+      ${tw`text-center md:text-right`};
       font: 700 24px/28px "Alegreya Sans";
       text-transform: uppercase;
     }
   }
 
   article {
-    ${tw("w-full md:w-3/4 text-xl leading-normal")};
+    ${tw`w-full md:w-3/4 text-xl leading-normal`};
 
     h1 {
-      ${tw("leading-loose tracking-wide")};
+      ${tw`leading-loose tracking-wide`};
       font-family: Alegreya;
       font: 700 24px/28px "Alegreya Sans";
     }
 
     a {
-      ${tw("w-full text-black no-underline")};
+      ${tw`w-full text-black no-underline`};
     }
   }
 `;

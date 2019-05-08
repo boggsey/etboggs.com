@@ -1,24 +1,22 @@
-/* global tw */
 import React, { Component } from "react";
-import styled from "react-emotion";
+import styled from "styled-components";
+import tw from "tailwind.macro";
 import Link from "gatsby-link";
 import Nav from "./../Nav/Nav";
 
 const HeaderWrapper = styled.header`
-  ${tw("w-full h-100px absolute md:fixed z-50")};
+  ${tw`w-full h-100px absolute md:fixed z-50`};
 
   .container {
-    ${tw(
-      "w-full md:w-95p h-100px justify-between items-center flex flex-col md:flex-row pt-4 md:pt-0"
-    )};
+    ${tw`w-full md:w-95p h-100px justify-between items-center flex flex-col md:flex-row pt-4 md:pt-0`};
   }
 
   .logo {
-    ${tw("w-45px h-45px md:w-full text-black text-center md:text-left")};
+    ${tw`w-45px h-45px md:w-full text-black text-center md:text-left`};
     font: 400 45px/55px "gentium book basic";
 
     a {
-      ${tw("no-underline text-black")};
+      ${tw`no-underline text-black`};
     }
   }
 `;

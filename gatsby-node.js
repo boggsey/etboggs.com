@@ -5,11 +5,6 @@ const siteConfig = require("./data/SiteConfig");
 
 const postNodes = [];
 
-exports.onCreateBabelConfig = ({ actions: { setBabelPlugin } }) => {
-  setBabelPlugin({ name: "babel-plugin-tailwind" });
-  setBabelPlugin({ name: "babel-plugin-emotion" });
-};
-
 function addSiblingNodes(createNodeField) {
   postNodes.sort(
     ({ frontmatter: { date: date1 } }, { frontmatter: { date: date2 } }) => {
@@ -25,30 +20,36 @@ function addSiblingNodes(createNodeField) {
   );
   for (let i = 0; i < postNodes.length; i += 1) {
     const nextID = i + 1 < postNodes.length ? i + 1 : 0;
-    const prevID = i - 1 > 0 ? i - 1 : postNodes.length - 1;
+    const prevID = i - 1 >= 0 ? i - 1 : postNodes.length - 1;
     const currNode = postNodes[i];
     const nextNode = postNodes[nextID];
     const prevNode = postNodes[prevID];
+    console.log("current node is ", currNode.id);
+    console.log("next node is ", nextNode.id);
     createNodeField({
       node: currNode,
       name: "nextTitle",
       value: nextNode.frontmatter.title
     });
+    console.log("next title is ", currNode.fields.nextTitle);
     createNodeField({
       node: currNode,
       name: "nextSlug",
       value: nextNode.fields.slug
     });
+    console.log("next slug is ", currNode.fields.nextSlug);
     createNodeField({
       node: currNode,
       name: "prevTitle",
       value: prevNode.frontmatter.title
     });
+    console.log("prev title is ", currNode.fields.prevTitle);
     createNodeField({
       node: currNode,
       name: "prevSlug",
       value: prevNode.fields.slug
     });
+    console.log("prev slug is ", currNode.fields.prevSlug);
   }
 }
 

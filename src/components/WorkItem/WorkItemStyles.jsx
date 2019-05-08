@@ -1,13 +1,11 @@
-/* global tw */
-import styled from "react-emotion";
+import styled from "styled-components";
+import tw from "tailwind.macro";
 import AlchemyPicture from "../../images/alchemy.jpg";
 import AvftiPicture from "../../images/avfti-strength-blue.jpg";
 import GdiPicture from "../../images/gdi.jpg";
 
 const WorkItemIndividual = styled.div`
-  ${tw(
-    "w-full flex flex-col md:flex-row min-h-screen justify-center pl-4 pr-4"
-  )};
+  ${tw`w-full flex flex-col md:flex-row min-h-screen justify-center pl-4 pr-4`};
 
   &.alchemy {
     background: url(${AlchemyPicture}) center center;
@@ -30,9 +28,7 @@ const WorkItemIndividual = styled.div`
   }
 
   .work-item-summary {
-    ${tw(
-      "w-full md:w-1/4 min-h-screen text-white flex flex-col items-center justify-center"
-    )};
+    ${tw`w-full md:w-1/4 min-h-screen text-white flex flex-col items-center justify-center`};
 
     @media screen and (max-width: $breakpoint-mobile-max) {
       min-height: 30vh;
@@ -57,7 +53,7 @@ const WorkItemIndividual = styled.div`
     }
 
     p {
-      ${tw("pt-2")};
+      ${tw`pt-2`};
       font: 400 15px/20px;
     }
   }

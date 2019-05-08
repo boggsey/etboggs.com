@@ -1,42 +1,36 @@
-/* global tw */
 import React, { Component } from "react";
-import styled from "react-emotion";
+import styled from "styled-components";
+import tw from "tailwind.macro";
 import UserLinks from "../UserLinks/UserLinks";
 import config from "../../../data/SiteConfig";
 
 const AboutWrapper = styled.section`
-  ${tw(
-    "w-full justify-between items-center flex flex-row min-h-screen pt-12 pb-12"
-  )};
+  ${tw`w-full justify-between items-center flex flex-row min-h-screen pt-12 pb-12`};
 
   .container {
-    ${tw(
-      "sm:w-5/6 med:w-4/5 justify-between items-stretch flex flex-col lg:flex-row"
-    )};
+    ${tw`sm:w-5/6 med:w-4/5 justify-between items-stretch flex flex-col lg:flex-row`};
   }
 
   h2 {
-    ${tw("m0 text-center md:text-left")};
+    ${tw`m0 text-center md:text-left`};
     font: 700 24px/28px "Alegreya Sans";
     text-transform: uppercase;
   }
 
   .about-image {
-    ${tw("w-full md:w-1/2 flex justify-end items-center")};
+    ${tw`w-full md:w-1/2 flex justify-end items-center`};
 
     @media screen and (max-width: $breakpoint-mobile-max) {
       order: 1;
     }
 
     img {
-      ${tw("w-full md:w-3/4")};
+      ${tw`w-full md:w-3/4`};
     }
   }
 
   .full-description {
-    ${tw(
-      "w-full md:w-1/2 flex flex-col items-start justify-center text-lg leading-normal"
-    )};
+    ${tw`w-full md:w-1/2 flex flex-col items-start justify-center text-lg leading-normal`};
 
     @media screen and (max-width: $breakpoint-mobile-max) {
       order: 2;
@@ -45,7 +39,7 @@ const AboutWrapper = styled.section`
 
   .social {
     a {
-      ${tw("w-auto inline-block pr-4 text-black")};
+      ${tw`w-auto inline-block pr-4 text-black`};
     }
   }
 `;

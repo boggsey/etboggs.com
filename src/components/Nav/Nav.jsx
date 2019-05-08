@@ -1,23 +1,21 @@
-/* global tw */
 import React, { Component } from "react";
-import styled from "react-emotion";
+import styled from "styled-components";
+import tw from "tailwind.macro";
 import Link from "gatsby-link";
 
 const NavWrapper = styled.nav`
-  ${tw("w-full md:w-1/3 text-center")};
+  ${tw`w-full md:w-1/3 text-center`};
   color: #777;
 
   a {
-    ${tw(
-      "no-underline inline-block md:block uppercase text-center md:text-right pr-4 pl-4 md:pr-0"
-    )};
+    ${tw`no-underline inline-block md:block uppercase text-center md:text-right pr-4 pl-4 md:pr-0`};
 
     &:first-of-type {
-      ${tw("pl-0 pr-0")};
+      ${tw`pl-0 pr-0`};
     }
 
     &:last-of-type {
-      ${tw("pr-0 pl-0")};
+      ${tw`pr-0 pl-0`};
     }
     color: #333;
     font: 600 16px/20px "Roboto";
