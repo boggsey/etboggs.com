@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import tw from "tailwind.macro";
-import Link from "gatsby-link";
+import { Link } from "gatsby";
 
 const NavWrapper = styled.nav`
   ${tw`w-full md:w-1/3 text-center`};
