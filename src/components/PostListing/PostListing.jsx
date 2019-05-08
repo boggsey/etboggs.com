@@ -19,15 +19,18 @@ const WritingWrapper = styled.section`
 
     .section-header {
       ${tw("text-center md:text-right")};
+      font: 700 24px/28px "Alegreya Sans";
+      text-transform: uppercase;
     }
   }
 
   article {
-    ${tw("w-3/4 text-xl leading-normal")};
+    ${tw("w-full md:w-3/4 text-xl leading-normal")};
 
     h1 {
       ${tw("leading-loose tracking-wide")};
       font-family: Alegreya;
+      font: 700 24px/28px "Alegreya Sans";
     }
 
     a {

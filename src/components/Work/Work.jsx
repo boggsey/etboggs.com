@@ -7,7 +7,7 @@ import Gdi from "../WorkItem/Gdi";
 
 const WorkWrapper = styled.section`
   ${tw("w-full flex flex-col items-center min-h-screen justify-center")};
-  background: hsl(233, 9%, 19%);
+  background: #2d2d34;
 `;
 
 class Work extends Component {

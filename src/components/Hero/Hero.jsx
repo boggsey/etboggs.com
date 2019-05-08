@@ -10,13 +10,13 @@ const HeroWrapper = styled.section`
   background-image: url(${Background});
 
   p {
-    ${tw("w-4/5 md:w-2/5 text-center")};
+    ${tw("w-4/5 md:w-2/5 text-center mt-0")};
     font-size: 20px;
   }
 
   .name {
-    ${tw("w-full md:w-3/4 text-center m0 uppercase")};
-    font: 700 45px/55px "Roboto";
+    ${tw("w-full md:w-3/4 text-center m0 uppercase leading-normal m0")};
+    font: 700 24px/24px "Roboto";
 
     @media screen and (max-width: 420px) {
       font: 400 25px/35px "Roboto";

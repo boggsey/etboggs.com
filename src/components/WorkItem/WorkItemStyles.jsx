@@ -1,14 +1,27 @@
 /* global tw */
 import styled from "react-emotion";
-import WorkItemPicture from "../../images/avfti-strength.jpg";
+import AlchemyPicture from "../../images/alchemy.jpg";
+import AvftiPicture from "../../images/avfti-strength-blue.jpg";
+import GdiPicture from "../../images/gdi.jpg";
 
 const WorkItemIndividual = styled.div`
-  ${tw("w-full flex flex-row min-h-screen")};
+  ${tw(
+    "w-full flex flex-col md:flex-row min-h-screen justify-center pl-4 pr-4"
+  )};
 
-  .container {
-    ${tw(
-      "w-full md:w-90p flex flex-col md:flex-row items-stretch justify-between"
-    )};
+  &.alchemy {
+    background: url(${AlchemyPicture}) center center;
+    background-size: cover;
+  }
+
+  &.avfti {
+    background: url(${AvftiPicture}) center center;
+    background-size: cover;
+  }
+
+  &.gdi {
+    background: url(${GdiPicture}) center center;
+    background-size: cover;
   }
 
   h2 {
@@ -18,14 +31,23 @@ const WorkItemIndividual = styled.div`
 
   .work-item-summary {
     ${tw(
-      "w-full md:w-1/2 min-h-screen text-white flex flex-col justify-center"
+      "w-full md:w-1/4 min-h-screen text-white flex flex-col items-center justify-center"
     )};
-    background-color: #000;
-    padding: 80px;
 
     @media screen and (max-width: $breakpoint-mobile-max) {
       min-height: 30vh;
       padding: 20px 10%;
+    }
+
+    h3 {
+      font: 700 24px/28px "Alegreya Sans";
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+
+    .job-title {
+      margin-top: 0;
+      font-style: italic;
     }
 
     .line {
@@ -34,32 +56,9 @@ const WorkItemIndividual = styled.div`
       background: white;
     }
 
-    h3 {
-      font: 700 24px/28px "Alegreya Sans";
-      text-transform: uppercase;
-    }
-
     p {
       ${tw("pt-2")};
-
       font: 400 15px/20px;
-    }
-  }
-
-  .work-item-explanation {
-    ${tw("w-4/5 md:w-1/2 text-white text-black flex flex-col justify-center")};
-    background: #fdfdfd;
-    padding: 0 120px 0 50px;
-
-    @media screen and (max-width: $breakpoint-mobile-max) {
-      margin: 0 auto;
-      min-height: 50vh;
-      padding: 30px 0;
-    }
-
-    h3 {
-      font: 700 20px/20px "Alegreya Sans";
-      text-transform: uppercase;
     }
   }
 `;

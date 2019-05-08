@@ -17,6 +17,8 @@ const AboutWrapper = styled.section`
 
   h2 {
     ${tw("m0 text-center md:text-left")};
+    font: 700 24px/28px "Alegreya Sans";
+    text-transform: uppercase;
   }
 
   .about-image {
@@ -32,7 +34,9 @@ const AboutWrapper = styled.section`
   }
 
   .full-description {
-    ${tw("w-full md:w-1/2 text-lg leading-normal")};
+    ${tw(
+      "w-full md:w-1/2 flex flex-col items-start justify-center text-lg leading-normal"
+    )};
 
     @media screen and (max-width: $breakpoint-mobile-max) {
       order: 2;
@@ -54,27 +58,17 @@ class About extends Component {
           <div className="full-description">
             <h2 className="section-header">About</h2>
             <p>
-              I&apos;ve always liked to build things. So, it&apos;s no surprise
-              that I became fiercely interested in teaching myself how to make
-              websites as a kid. Around 2000, I poured through the htmlgoodies
-              website and built the worst looking site for the metal band that I
-              was in at the time. Unfortunately, the rock star life didn&apos;t
-              quite pan out so I joined the Marine Corps on a whim. After being
-              honorably discharged as a Corporal in 2007, I quickly
-              re-discovered a nearly forgotten passion for web development.
-            </p>
-
-            <p>
-              Since then, I&apos;ve committed to a life-long pursuit of
-              learning, sharing and crafting of technology. I spend half of my
-              time building it for profit (P&amp;G, Mars, ConAgra, Ford and Eli
-              Lilly) and the other half focused on technology that improves
-              people&apos;s lives. In 2012, I helped co-create a nonprofit
-              organization that helps those affected by sexual violence.
-              I&apos;ve traveled the entire United States to share a message of
-              hope and healing through compassion, discussion, empathy and
-              understanding. You can also find me teaching classes for Girl
-              Develop It Cincinnati.
+              After being honorably discharged from the United States Marine
+              Corps as a Corporal in 2007, I&apos;ve committed to a life-long
+              pursuit of learning, sharing and crafting of technology. I spend
+              half of my time building it for profit (P&amp;G, Mars, ConAgra,
+              Ford and Eli Lilly) and the other half focused on technology that
+              improves people&apos;s lives. In 2012, I helped co-create a
+              nonprofit organization that helps those affected by sexual
+              violence. I&apos;ve traveled the entire United States to share a
+              message of hope and healing through compassion, discussion,
+              empathy and understanding. You can also find me teaching classes
+              for Girl Develop It Cincinnati.
             </p>
             <div className="social">
               <UserLinks size={20} config={config} />

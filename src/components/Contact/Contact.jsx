@@ -55,7 +55,7 @@ const ContactWrapper = styled.section`
     }
 
     .social {
-      ${tw("w-full uppercase")};
+      ${tw("w-full uppercase justify-end")};
       padding: 20px 0;
 
       a {
