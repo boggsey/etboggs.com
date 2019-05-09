@@ -31,25 +31,21 @@ function addSiblingNodes(createNodeField) {
       name: "nextTitle",
       value: nextNode.frontmatter.title
     });
-    console.log("next title is ", currNode.fields.nextTitle);
     createNodeField({
       node: currNode,
       name: "nextSlug",
       value: nextNode.fields.slug
     });
-    console.log("next slug is ", currNode.fields.nextSlug);
     createNodeField({
       node: currNode,
       name: "prevTitle",
       value: prevNode.frontmatter.title
     });
-    console.log("prev title is ", currNode.fields.prevTitle);
     createNodeField({
       node: currNode,
       name: "prevSlug",
       value: prevNode.fields.slug
     });
-    console.log("prev slug is ", currNode.fields.prevSlug);
   }
 }
 

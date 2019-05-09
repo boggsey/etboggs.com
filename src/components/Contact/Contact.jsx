@@ -51,7 +51,7 @@ const ContactWrapper = styled.section`
     }
 
     .social {
-      ${tw`w-full uppercase justify-end`};
+      ${tw`w-full flex flex-row justify-center md:justify-end`};
       padding: 20px 0;
 
       a {

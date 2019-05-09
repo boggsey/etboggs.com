@@ -24,8 +24,7 @@ const WritingWrapper = styled.section`
     ${tw`w-full md:w-3/4 text-xl leading-normal`};
 
     h1 {
-      ${tw`leading-loose tracking-wide`};
-      font-family: Alegreya;
+      ${tw`leading-loose`};
       font: 700 24px/28px "Alegreya Sans";
     }
 
@@ -68,7 +67,7 @@ class PostListing extends React.Component {
                 </Link>
                 <p>{post.excerpt}</p>
                 <Link to={post.path} key={post.title}>
-                  <p>Read more</p>
+                  <p className="read-more">Read more</p>
                 </Link>
               </div>
             ))}
