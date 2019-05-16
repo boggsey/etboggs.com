@@ -11,10 +11,9 @@ class Avfti extends Component {
           <div className="line" />
           <p>
             A Voice for the Innocent is a non-profit community dedicated to the
-            support of those affected by rape and sexual abuse. We use
-            technology to provide access to long term resources. I am
-            responsible for development and growth of the storytelling and
-            resource platforms.
+            support of those affected by sexual violence. We use technology to
+            provide access to long term resources. I am responsible for
+            development and growth of the storytelling and resource platforms.
           </p>
         </div>
       </WorkItemIndividual>

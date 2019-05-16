@@ -1,12 +1,10 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import tw from "tailwind.macro";
-import Background from "../../images/forest.png";
 
 const HeroWrapper = styled.section`
   ${tw`w-full justify-center items-center flex flex-col min-h-screen text-white`};
-  background-image: url(${Background});
-  background-size: cover;
+  background-color: #2d2d34;
 
   p {
     ${tw`w-4/5 md:w-2/5 text-center mt-0`};
@@ -33,7 +31,6 @@ class Hero extends Component {
   render() {
     return (
       <HeroWrapper>
-        <h2 className="name">Eric Boggs</h2>
         <p>
           I&apos;m a developer, nonprofit cofounder and Marine Corps Veteran
           that is dedicated to social good. I currently work at Alchemy (a

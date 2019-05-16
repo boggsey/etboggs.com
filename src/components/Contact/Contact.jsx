@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "tailwind.macro";
-import MapContainer from "../MapContainer/MapContainer";
 import config from "../../../data/SiteConfig";
 import UserLinks from "../UserLinks/UserLinks";
+import MapImage from "../../images/map.jpg";
 
 const ContactWrapper = styled.section`
   ${tw`w-full justify-between items-center flex flex-col md:flex-row min-h-screen text-white`};
@@ -13,6 +13,10 @@ const ContactWrapper = styled.section`
   .contact-map {
     ${tw`w-full md:w-1/2 relative`};
     min-height: 50vh;
+
+    img {
+      width: 100%;
+    }
   }
 
   .contact-details {
@@ -66,7 +70,7 @@ export default function Contact() {
   return (
     <ContactWrapper>
       <div id="map" className="contact-map">
-        <MapContainer />
+        <img src={MapImage} alt="Map of Cincinnati" />
       </div>
       <div className="contact-details">
         <h3 className="section-header">Let&apos;s Talk</h3>

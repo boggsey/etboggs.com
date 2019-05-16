@@ -7,24 +7,24 @@ const WritingWrapper = styled.section`
   ${tw`w-full min-h-screen justify-center items-center flex flex-col pt-8 pb-8`};
 
   .container {
-    ${tw`w-5/6 md:w-3/4 justify-between items-stretch flex flex-col md:flex-row`};
+    ${tw`w-5/6 md:w-3/4 justify-start items-stretch flex flex-col md:flex-row`};
   }
 
   .writing-list {
-    ${tw`w-full md:w-1/5 text-right`};
+    ${tw`w-full md:w-1/5 text-left`};
 
     .section-header {
-      ${tw`text-center md:text-right`};
+      ${tw`text-center md:text-center mt-0`};
       font: 700 24px/28px "Alegreya Sans";
       text-transform: uppercase;
     }
   }
 
   article {
-    ${tw`w-full md:w-3/4 text-xl leading-normal`};
+    ${tw`w-full md:w-3/5 text-xl leading-normal`};
 
     h1 {
-      ${tw`leading-loose`};
+      ${tw`leading-loose mt-0`};
       font: 700 24px/28px "Alegreya Sans";
     }
 

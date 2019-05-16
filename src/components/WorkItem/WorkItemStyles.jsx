@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import tw from "tailwind.macro";
-import AlchemyPicture from "../../images/alchemy.jpg";
+import AlchemyPicture from "../../images/alchemy2.jpg";
 import AvftiPicture from "../../images/avfti-strength-blue.jpg";
 import GdiPicture from "../../images/gdi.jpg";
 

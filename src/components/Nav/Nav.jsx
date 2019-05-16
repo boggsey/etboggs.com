@@ -17,8 +17,8 @@ const NavWrapper = styled.nav`
     &:last-of-type {
       ${tw`pr-0 pl-0`};
     }
-    color: #333;
-    font: 600 16px/20px "Roboto";
+    color: #222;
+    font: 700 16px/20px "Alegreya Sans";
   }
 `;
 

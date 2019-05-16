@@ -3,6 +3,7 @@ import styled from "styled-components";
 import tw from "tailwind.macro";
 import UserLinks from "../UserLinks/UserLinks";
 import config from "../../../data/SiteConfig";
+import Me from "../../images/me.jpg";
 
 const AboutWrapper = styled.section`
   ${tw`w-full justify-between items-center flex flex-row min-h-screen pt-12 pb-12`};
@@ -69,7 +70,7 @@ class About extends Component {
             </div>
           </div>
           <div className="about-image">
-            <img src="http://placehold.it/400x400" alt="" />
+            <img src={Me} alt="" />
           </div>
         </div>
       </AboutWrapper>
