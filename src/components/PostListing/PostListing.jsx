@@ -14,17 +14,18 @@ const WritingWrapper = styled.section`
     ${tw`w-full md:w-1/5 text-left`};
 
     .section-header {
-      ${tw`text-center md:text-center mt-0`};
+      ${tw`text-right md:text-center mt-0 uppercase font-sans font-bold`};
       font: 700 24px/28px "Alegreya Sans";
-      text-transform: uppercase;
     }
   }
 
   article {
-    ${tw`w-full md:w-3/5 text-xl leading-normal`};
+    ${tw`w-full md:w-2/3 text-xl leading-normal`};
+    padding-left: 30px;
+    padding-right: 30px;
 
     h1 {
-      ${tw`leading-loose mt-0`};
+      ${tw`leading-loose mt-0 font-sans font-bold`};
       font: 700 24px/28px "Alegreya Sans";
     }
 

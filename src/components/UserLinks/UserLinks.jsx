@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import tw from "tailwind.macro";
 import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 
 const UserLinksWrapper = styled.div``;

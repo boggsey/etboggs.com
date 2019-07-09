@@ -5,7 +5,6 @@ import { Link } from "gatsby";
 
 const NavWrapper = styled.nav`
   ${tw`w-full md:w-1/3 text-center`};
-  color: #777;
 
   a {
     ${tw`no-underline inline-block md:block uppercase text-center md:text-right pr-4 pl-4 md:pr-0`};
@@ -17,8 +16,9 @@ const NavWrapper = styled.nav`
     &:last-of-type {
       ${tw`pr-0 pl-0`};
     }
-    color: #222;
-    font: 700 16px/20px "Alegreya Sans";
+    color: #ddd;
+    font: 700 16px/20px "Roboto";
+    letter-spacing: 1px;
   }
 `;
 

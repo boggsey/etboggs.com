@@ -5,56 +5,39 @@ import AvftiPicture from "../../images/avfti-strength-blue.jpg";
 import GdiPicture from "../../images/gdi.jpg";
 
 const WorkItemIndividual = styled.div`
-  ${tw`w-full flex flex-col md:flex-row min-h-screen justify-center pl-4 pr-4`};
+  ${tw`w-full flex flex-col md:flex-row min-h-screen justify-center pl-4 pr-4 bg-cover bg-center`};
 
   &.alchemy {
-    background: url(${AlchemyPicture}) center center;
-    background-size: cover;
+    background-image: url(${AlchemyPicture});
   }
 
   &.avfti {
-    background: url(${AvftiPicture}) center center;
-    background-size: cover;
+    background-image: url(${AvftiPicture});
   }
 
   &.gdi {
-    background: url(${GdiPicture}) center center;
-    background-size: cover;
-  }
-
-  h2 {
-    font: 400 30px/25px "Alegreya";
-    padding-bottom: 30px;
+    background-image: url(${GdiPicture});
   }
 
   .work-item-summary {
-    ${tw`w-full md:w-1/4 min-h-screen text-white flex flex-col items-center justify-center`};
-
-    @media screen and (max-width: $breakpoint-mobile-max) {
-      min-height: 30vh;
-      padding: 20px 10%;
-    }
+    ${tw`w-full pl-4 pr-4 md:w-1/4 min-h-screen text-white flex flex-col items-center justify-center`};
 
     h3 {
-      font: 700 24px/28px "Alegreya Sans";
-      text-transform: uppercase;
-      margin-bottom: 0;
+      ${tw`font-sans font-bold uppercase mb-0 text-xl`};
     }
 
     .job-title {
-      margin-top: 0;
-      font-style: italic;
+      ${tw`italic mt-0`};
     }
 
     .line {
+      background-color: white;
       width: 30px;
       height: 2px;
-      background: white;
     }
 
     p {
-      ${tw`pt-2`};
-      font: 400 15px/20px;
+      ${tw`pt-2 text-base leading-normal text-lg`};
     }
   }
 `;

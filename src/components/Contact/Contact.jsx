@@ -6,52 +6,35 @@ import UserLinks from "../UserLinks/UserLinks";
 import MapImage from "../../images/map.jpg";
 
 const ContactWrapper = styled.section`
-  ${tw`w-full justify-between items-center flex flex-col md:flex-row min-h-screen text-white`};
+  ${tw`w-full justify-between items-center flex flex-col md:flex-row min-h-halfScreen text-white`};
   background-color: #212121;
-  min-height: 50vh;
 
   .contact-map {
-    ${tw`w-full md:w-1/2 relative`};
-    min-height: 50vh;
+    ${tw`w-full md:w-1/2 relative min-h-halfScreen`};
 
     img {
-      width: 100%;
+      ${tw`w-full`};
     }
   }
 
   .contact-details {
-    ${tw`w-full md:w-1/2 flex flex-col items-center md:items-end justify-center text-center md:text-right`};
+    ${tw`w-full md:w-1/2 min-h-halfScreen flex flex-col items-center md:items-end justify-center text-center md:text-right`};
     padding: 30px 5%;
 
-    @media screen and (max-width: $breakpoint-mobile-max) {
-      order: 1;
-      min-height: 50vh;
-    }
-
-    .section-header {
+    h3 {
+      ${tw`w-full text-center md:text-right uppercase font-sans font-bold text-2xl`};
       margin-bottom: 10px;
-
-      @media screen and (max-width: $breakpoint-mobile-max) {
-        text-align: center;
-        width: 100%;
-      }
     }
 
     p {
-      ${tw`w-4/5`};
-      color: #666;
-      font: 400 14px/22px "Roboto";
+      ${tw`w-4/5 font-serif text-lg text-body`};
     }
 
     .line {
+      ${tw`w-full text-center md:text-right md:mx-auto`};
       margin-top: 10px;
       width: 30px;
       height: 2px;
-      background: white;
-
-      @media screen and (max-width: $breakpoint-mobile-max) {
-        margin: 0 auto;
-      }
     }
 
     .social {
@@ -59,8 +42,7 @@ const ContactWrapper = styled.section`
       padding: 20px 0;
 
       a {
-        ${tw`w-auto inline-block text-white`};
-        padding-left: 10px;
+        ${tw`w-auto inline-block text-white pl-3`};
       }
     }
   }
@@ -73,7 +55,7 @@ export default function Contact() {
         <img src={MapImage} alt="Map of Cincinnati" />
       </div>
       <div className="contact-details">
-        <h3 className="section-header">Let&apos;s Talk</h3>
+        <h3>Contact</h3>
         <p>
           I&apos;m currently employed by Alchemy in Cincinnati, Ohio. You can
           find me at the Alchemy offices, the AVFTI office in Covington

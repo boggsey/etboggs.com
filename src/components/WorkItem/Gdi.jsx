@@ -10,11 +10,11 @@ class Gdi extends Component {
           <p className="job-title">Instructor</p>
           <div className="line" />
           <p>
-            Girl Develop It is a nonprofit organization that exists to provide
-            affordable and judgment-free opportunities for women interested in
-            learning web and software development. As a long time instructor for
-            Girl Develop It Cincinnati, I have taught nearly 150 students about
-            the principles of web development.
+            As a long time instructor for Girl Develop It Cincinnati, I have
+            taught more than 150 students about the principles of web
+            development. I primarily teach Intermediate level classes which
+            focus on the real world implementation of technologies that students
+            have learned.
           </p>
         </div>
       </WorkItemIndividual>

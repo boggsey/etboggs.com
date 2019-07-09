@@ -10,12 +10,10 @@ class Alchemy extends Component {
           <p className="job-title">Software Engineer</p>
           <div className="line" />
           <p>
-            Alchemy is reinventing the way that P&amp;G brands connect with and
-            deliver value to consumers by building technologies and business
-            models that give our partners an unfair competitive advantage in the
-            marketplace. My role is to create excellent user experiences on
-            websites and mobile applications using the latest technologies with
-            a high level of focus on performance, security and maintainability.
+            At Alchemy, I work to create excellent user experiences on websites
+            and mobile applications for Procter and Gamble's Home Care category.
+            I work with React and React Native on a day-to-day basis and spend
+            the rest of my time working to advance our Front End practice.
           </p>
         </div>
       </WorkItemIndividual>

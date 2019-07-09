@@ -10,10 +10,11 @@ class Avfti extends Component {
           <p className="job-title">Co-Founder</p>
           <div className="line" />
           <p>
-            A Voice for the Innocent is a non-profit community dedicated to the
-            support of those affected by sexual violence. We use technology to
-            provide access to long term resources. I am responsible for
-            development and growth of the storytelling and resource platforms.
+            In 2012, I co-founded A Voice for the Innocent wgucg is a non-profit
+            community dedicated to the support of those affected by sexual
+            violence. We use technology to provide access to long term
+            resources. My primary focus is the development and growth of the
+            storytelling and resource platforms.
           </p>
         </div>
       </WorkItemIndividual>
