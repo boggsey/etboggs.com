@@ -14,7 +14,7 @@ const WritingWrapper = styled.section`
     ${tw`w-full md:w-1/5 text-left`};
 
     .section-header {
-      ${tw`text-right md:text-center mt-0 uppercase font-sans font-bold`};
+      ${tw`text-center mt-0 uppercase font-sans font-bold`};
       font: 700 24px/28px "Alegreya Sans";
     }
   }

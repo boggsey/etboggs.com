@@ -4,7 +4,7 @@ import tw from "tailwind.macro";
 import { Link } from "gatsby";
 
 const HeaderWrapper = styled.header`
-  ${tw`w-full h-100px absolute md:fixed z-50 text-center`};
+  ${tw`w-full h-100px absolute md:fixed z-50 text-center flex justify-center md:justify-start`};
 
   .logo {
     ${tw`flex justify-center text-center bg-slate`};

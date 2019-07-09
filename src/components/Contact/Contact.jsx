@@ -13,7 +13,7 @@ const ContactWrapper = styled.section`
   }
 
   .inner-container {
-    ${tw`w-full justify-between flex flex-row`};
+    ${tw`w-full justify-between flex flex-col md:flex-row`};
   }
 
   .contact-details {
@@ -41,7 +41,7 @@ const ContactWrapper = styled.section`
   }
 
   .follow-me {
-    ${tw`w-full md:w-1/3 flex flex-col text-center`};
+    ${tw`w-full md:w-1/3 flex flex-col text-center pt-12 pb-12 md:pt-0 md:pb-0`};
 
     h3 {
       ${tw`w-full text-center uppercase font-sans font-bold text-2xl mt-0`};
@@ -61,7 +61,7 @@ const ContactWrapper = styled.section`
     ${tw`w-full md:w-1/3 flex flex-col text-center md:text-right md:items-end`};
 
     h3 {
-      ${tw`w-full text-right uppercase font-sans font-bold text-2xl mt-0`};
+      ${tw`w-full text-center md:text-right uppercase font-sans font-bold text-2xl mt-0`};
     }
 
     .address {
