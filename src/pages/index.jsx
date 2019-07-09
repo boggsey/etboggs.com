@@ -5,6 +5,7 @@ import Layout from "../layout";
 import PostListing from "../components/PostListing/PostListing";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
+import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
 import Work from "../components/Work/Work";
 import About from "../components/About/About";
@@ -17,6 +18,7 @@ class Index extends React.Component {
         <div className="index-container">
           <Helmet title={config.siteTitle} />
           <SEO />
+          <Header />
           <Hero />
           <About />
           <Work />

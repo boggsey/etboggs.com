@@ -35,7 +35,7 @@ module.exports = {
       socialIcon: "TiSocialLinkedIn"
     }
   ],
-  copyright: "Copyright © 2018 Eric Boggs", // Copyright string for the footer of the website and RSS feed.
+  copyright: "Copyright © 2019 Eric Boggs", // Copyright string for the footer of the website and RSS feed.
   themeColor: "#000000", // Used for setting manifest and progress theme colors.
   backgroundColor: "#e0e0e0" // Used for setting manifest background color.
 };

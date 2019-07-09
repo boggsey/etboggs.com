@@ -19,7 +19,7 @@ const AboutWrapper = styled.section`
   }
 
   .full-description {
-    ${tw`w-full md:w-2/5 flex flex-col items-start justify-center text-lg leading-normal`};
+    ${tw`w-full md:w-2/5 flex flex-col items-start justify-center text-xl leading-normal font-sans`};
     padding-left: 10%;
   }
 `;

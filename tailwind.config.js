@@ -91,6 +91,7 @@ module.exports = {
     minHeight: {
       "0": "0",
       full: "100%",
+      halfScreen: "50vh",
       screen: "100vh"
     },
     textSizes: {

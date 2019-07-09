@@ -7,7 +7,7 @@ const HeroWrapper = styled.section`
   background-color: #2a2c39;
 
   h1 {
-    ${tw`w-4/5 md:w-1/2 text-white text-4xl leading-normal font-sans text-left mb-0`};
+    ${tw`w-4/5 md:w-1/2 text-white text-4xl leading-normal font-sans text-left mb-0 mt-0`};
   }
 
   p {

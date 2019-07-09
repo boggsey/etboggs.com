@@ -3,31 +3,33 @@ import styled from "styled-components";
 import tw from "tailwind.macro";
 import config from "../../../data/SiteConfig";
 import UserLinks from "../UserLinks/UserLinks";
-import MapImage from "../../images/map.jpg";
 
 const ContactWrapper = styled.section`
-  ${tw`w-full justify-between items-center flex flex-col md:flex-row min-h-halfScreen text-white`};
+  ${tw`w-full justify-between items-center flex flex-col md:flex-row min-h-halfScreen text-white  pt-32 pb-32`};
   background-color: #212121;
 
-  .contact-map {
-    ${tw`w-full md:w-1/2 relative min-h-halfScreen`};
+  h2 {
+    ${tw`text-center uppercase font-sans font-bold text-3xl`};
+  }
 
-    img {
-      ${tw`w-full`};
-    }
+  .inner-container {
+    ${tw`w-full justify-between flex flex-row`};
   }
 
   .contact-details {
-    ${tw`w-full md:w-1/2 min-h-halfScreen flex flex-col items-center md:items-end justify-center text-center md:text-right`};
-    padding: 30px 5%;
+    ${tw`w-full md:w-1/3 flex flex-col text-center md:text-left`};
 
     h3 {
-      ${tw`w-full text-center md:text-right uppercase font-sans font-bold text-2xl`};
+      ${tw`w-full text-center md:text-left uppercase font-sans font-bold text-2xl mt-0`};
       margin-bottom: 10px;
     }
 
-    p {
-      ${tw`w-4/5 font-serif text-lg text-body`};
+    .contact-description {
+      ${tw`w-full md:w-4/5 font-serif text-xl text-body mb-0 leading-normal`};
+    }
+
+    .contact-email {
+      ${tw`text-body font-sans font-bold text-xl mt-0 leading-normal`};
     }
 
     .line {
@@ -36,14 +38,34 @@ const ContactWrapper = styled.section`
       width: 30px;
       height: 2px;
     }
+  }
+
+  .follow-me {
+    ${tw`w-full md:w-1/3 flex flex-col text-center`};
+
+    h3 {
+      ${tw`w-full text-center uppercase font-sans font-bold text-2xl mt-0`};
+    }
 
     .social {
-      ${tw`w-full flex flex-row justify-center md:justify-end`};
+      ${tw`w-full flex flex-row justify-center`};
       padding: 20px 0;
 
       a {
-        ${tw`w-auto inline-block text-white pl-3`};
+        ${tw`w-auto inline-block text-white pl-4 pr-4`};
       }
+    }
+  }
+
+  .location {
+    ${tw`w-full md:w-1/3 flex flex-col text-center md:text-right md:items-end`};
+
+    h3 {
+      ${tw`w-full text-right uppercase font-sans font-bold text-2xl mt-0`};
+    }
+
+    .address {
+      ${tw`w-full md:w-4/5 font-serif text-xl text-body mb-0 leading-normal`};
     }
   }
 `;
@@ -51,19 +73,36 @@ const ContactWrapper = styled.section`
 export default function Contact() {
   return (
     <ContactWrapper>
-      <div id="map" className="contact-map">
-        <img src={MapImage} alt="Map of Cincinnati" />
-      </div>
-      <div className="contact-details">
-        <h3>Contact</h3>
-        <p>
-          I&apos;m currently employed by Alchemy in Cincinnati, Ohio. You can
-          find me at the Alchemy offices, the AVFTI office in Covington
-          (CovWorx) or Coffee Emporium.
-        </p>
-        <div className="line" />
-        <div className="social">
-          <UserLinks size="25" config={config} />
+      <div className="container">
+        <div className="inner-container">
+          <div className="contact-details">
+            <h3>Contact</h3>
+            <p class="contact-description">
+              I&apos;m always interested in discussing programming or non-profit
+              projects over a cup of coffee. Hit me up.
+            </p>
+
+            <p className="contact-email">eric@mlemedia.com</p>
+          </div>
+
+          <div className="follow-me">
+            <h3>Follow</h3>
+            <div className="line" />
+            <div className="social">
+              <UserLinks size="45" config={config} color="#555" />
+            </div>
+          </div>
+
+          <div className="location">
+            <h3>Location</h3>
+            <p className="address">
+              1032 Madison Ave
+              <br />
+              Suite 107,
+              <br />
+              Covington, KY 41011
+            </p>
+          </div>
         </div>
       </div>
     </ContactWrapper>

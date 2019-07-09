@@ -6,17 +6,17 @@ const UserLinksWrapper = styled.div``;
 
 class UserLinks extends Component {
   render() {
-    const { size } = this.props;
+    const { size, color } = this.props;
     return (
       <UserLinksWrapper>
         <a href="https://twitter.com/etboggs">
-          <FaTwitter size={size} />
+          <FaTwitter size={size} color={color} />
         </a>
         <a href="https://www.linkedin.com/in/etboggs/">
-          <FaLinkedin size={size} />
+          <FaLinkedin size={size} color={color} />
         </a>
         <a href="https://github.com/boggsey">
-          <FaGithub size={size} />
+          <FaGithub size={size} color={color} />
         </a>
       </UserLinksWrapper>
     );

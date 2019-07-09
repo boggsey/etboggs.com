@@ -23,11 +23,11 @@ const WorkItemIndividual = styled.div`
     ${tw`w-full pl-4 pr-4 md:w-1/4 min-h-screen text-white flex flex-col items-center justify-center`};
 
     h3 {
-      ${tw`font-sans font-bold uppercase mb-0 text-xl`};
+      ${tw`font-sans font-bold uppercase mb-0 text-2xl`};
     }
 
     .job-title {
-      ${tw`italic mt-0`};
+      ${tw`text-xl italic mt-0`};
     }
 
     .line {
