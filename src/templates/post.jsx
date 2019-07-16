@@ -6,6 +6,7 @@ import tw from "tailwind.macro";
 import Layout from "../layout";
 import UserLinks from "../components/UserLinks/UserLinks";
 import SEO from "../components/SEO/SEO";
+import Header from "../components/Header/Header";
 import config from "../../data/SiteConfig";
 
 const PostWrapper = styled.div`
@@ -13,79 +14,63 @@ const PostWrapper = styled.div`
     ${tw`w-full flex flex-col justify-center`};
   }
 
-  #post {
-    ${tw`w-full flex flex-col justify-center items-center min-h-screen`};
+  ${tw`w-full flex flex-col justify-center items-center min-h-screen`};
 
-    .container {
-      ${tw`w-5/6 md:w-1/2 flex flex-col md:flex-row justify-between items-stretch`};
-      padding: 100px 0;
+  .container {
+    ${tw`w-5/6 md:w-1/2 flex flex-col md:flex-row justify-between items-stretch`};
+    padding: 100px 0;
+  }
+
+  .writing-list {
+    width: 20%;
+    text-align: left;
+    padding-right: 50px;
+
+    .post-header {
+      ${tw`font-sans text-center md:text-left text-white`};
     }
 
-    .writing-list {
-      width: 20%;
-      text-align: left;
-      padding-right: 50px;
+    a {
+      color: black;
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
 
-      @media screen and (max-width: $breakpoint-mobile-max) {
-        width: 100%;
+  article {
+    ${tw`w-full text-xl leading-normal`}
+
+    .author {
+      ${tw`flex items-center pb-6`}
+
+      .by-line {
+        ${tw`m-0 font-sans font-bold text-base`};
       }
 
-      .section-header {
-        @media screen and (max-width: $breakpoint-mobile-max) {
-          text-align: center;
+      img {
+        border-radius: 50%;
+      }
+
+      .author-summary {
+        padding-left: 20px;
+
+        a {
+          color: black;
+          margin-right: 5px;
         }
-      }
-
-      a {
-        color: black;
-        display: inline-block;
-        margin-right: 5px;
       }
     }
 
-    article {
-      width: 100%;
-      font-size: 20px;
-      line-height: 30px;
+    h1 {
+      ${tw`text-center text-5xl leading-tight font-sans`};
+    }
 
-      .author {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
+    h2 {
+      ${tw`text-center pt-8 pb-8 font-sans`};
+    }
 
-        .by-line {
-          margin: 0;
-          font: 600 17px/18px "gentium book basic";
-        }
-
-        img {
-          border-radius: 50%;
-        }
-
-        .author-summary {
-          padding-left: 20px;
-
-          a {
-            color: black;
-            margin-right: 5px;
-          }
-        }
-      }
-
-      h1 {
-        text-align: center;
-        font-size: 45px;
-        line-height: 55px;
-      }
-
-      h2 {
-        text-align: center;
-        padding: 20px 0;
-      }
-
-      @media screen and (max-width: $breakpoint-mobile-max) {
-        width: 100%;
-      }
+    h3 {
+      ${tw`text-left pt-4 pb-0 m-0 font-sans`};
     }
   }
 `;
@@ -108,10 +93,11 @@ export default class PostTemplate extends React.Component {
             <title>{`${post.title} | ${config.siteTitle}`}</title>
           </Helmet>
           <SEO postPath={slug} postNode={postNode} postSEO />
+          <Header />
           <PostWrapper>
             <div className="container">
               <article>
-                <h1 className="section-header">{post.title}</h1>
+                <h1 className="post-header">{post.title}</h1>
                 <div className="author">
                   <img src="http://placekitten.com/100/100" alt="" />
                   <div className="author-summary">

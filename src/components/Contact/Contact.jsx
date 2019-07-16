@@ -22,6 +22,7 @@ const ContactWrapper = styled.section`
     h3 {
       ${tw`w-full text-center md:text-left uppercase font-sans font-bold text-2xl mt-0`};
       margin-bottom: 10px;
+      letter-spacing: 2px;
     }
 
     .contact-description {
@@ -45,6 +46,7 @@ const ContactWrapper = styled.section`
 
     h3 {
       ${tw`w-full text-center uppercase font-sans font-bold text-2xl mt-0`};
+      letter-spacing: 2px;
     }
 
     .social {
@@ -62,6 +64,7 @@ const ContactWrapper = styled.section`
 
     h3 {
       ${tw`w-full text-center md:text-right uppercase font-sans font-bold text-2xl mt-0`};
+      letter-spacing: 2px;
     }
 
     .address {
