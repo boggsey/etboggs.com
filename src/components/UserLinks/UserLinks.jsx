@@ -9,13 +9,13 @@ class UserLinks extends Component {
     const { size, color } = this.props;
     return (
       <UserLinksWrapper>
-        <a href="https://twitter.com/etboggs">
+        <a href="https://twitter.com/etboggs" aria-label="Twitter">
           <FaTwitter size={size} color={color} />
         </a>
-        <a href="https://www.linkedin.com/in/etboggs/">
+        <a href="https://www.linkedin.com/in/etboggs/" aria-label="LinkedIn">
           <FaLinkedin size={size} color={color} />
         </a>
-        <a href="https://github.com/boggsey">
+        <a href="https://github.com/boggsey" aria-label="Github">
           <FaGithub size={size} color={color} />
         </a>
       </UserLinksWrapper>

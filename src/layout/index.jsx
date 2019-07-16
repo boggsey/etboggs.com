@@ -53,7 +53,7 @@ export default class MainLayout extends React.Component {
       <div>
         <Helmet>
           <link
-            href="https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans:400,700"
+            href="https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans:400,700&display=swap"
             rel="stylesheet"
           />
           <meta name="description" content={config.siteDescription} />

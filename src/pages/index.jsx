@@ -16,7 +16,9 @@ class Index extends React.Component {
     return (
       <Layout>
         <div className="index-container">
-          <Helmet title={config.siteTitle} />
+          <Helmet title={config.siteTitle}>
+            <html lang="en" />
+          </Helmet>
           <SEO />
           <Header />
           <Hero />
