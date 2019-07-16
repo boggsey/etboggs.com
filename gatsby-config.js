@@ -69,6 +69,12 @@ module.exports = {
     },
     "gatsby-plugin-sharp",
     "gatsby-plugin-catch-links",
+    {
+      resolve: "gatsby-plugin-html-attributes",
+      options: {
+        lang: "en"
+      }
+    },
     "gatsby-plugin-twitter",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-styled-components",
