@@ -21,8 +21,8 @@ class Hero extends Component {
       <HeroWrapper>
         <h1 class="name">Hello. I'm Eric Boggs.</h1>
         <p>
-          I'm a developer, nonprofit co-founder and Marine Corps Veteran that is
-          dedicated to social good. I currently work at Alchemy (a P&amp;G
+          I'm a developer, non-profit co-founder and Marine Corps Veteran that
+          is dedicated to social good. I currently work at Alchemy (a P&amp;G
           company) and serve on the board of A Voice for the Innocent, a
           nonprofit dedicated to helping those affected by sexual violence.
         </p>

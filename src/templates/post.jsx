@@ -48,6 +48,7 @@ const PostWrapper = styled.div`
       }
 
       img {
+        ${tw`w-32`}
         border-radius: 50%;
       }
 
