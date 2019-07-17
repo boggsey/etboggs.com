@@ -11,9 +11,9 @@ class Alchemy extends Component {
           <div className="line" />
           <p>
             At Alchemy, I work to create excellent user experiences on websites
-            and mobile applications for Procter and Gamble's Home Care category.
-            I work with React and React Native on a day-to-day basis and spend
-            the rest of my time working to advance our Front End practice.
+            and mobile applications for Procter and Gamble's Home Care team. I
+            work with React and React Native on a day-to-day basis and spend the
+            rest of my time working to advance our Front End practice.
           </p>
         </div>
       </WorkItemIndividual>
