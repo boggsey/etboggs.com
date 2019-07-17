@@ -99,7 +99,10 @@ export default class PostTemplate extends React.Component {
               <article>
                 <h1 className="post-header">{post.title}</h1>
                 <div className="author">
-                  <img src="http://placekitten.com/100/100" alt="" />
+                  <img
+                    src="https://res.cloudinary.com/ericboggs/image/upload/v1563397159/author_gtznmy.jpg"
+                    alt="Picture of Eric Boggs"
+                  />
                   <div className="author-summary">
                     <p className="by-line">by Eric Boggs</p>
                     <UserLinks config={config} />
