@@ -4,8 +4,9 @@
   "version": "1.1.0",
   "author": "Eric Boggs <eric@mlemedia.com>",
   "dependencies": {
+    "@dylanvann/gatsby-transformer-cloudinary": "1.0.36",
     "babel-plugin-styled-components": "^1.10.0",
-    "dotenv": "^6.0.0",
+    "dotenv": "6.2.0",
     "gatsby": "2.9.10",
     "gatsby-image": "2.0.0",
     "gatsby-plugin-catch-links": "2.0.2",
