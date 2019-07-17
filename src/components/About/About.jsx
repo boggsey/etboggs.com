@@ -3,11 +3,10 @@ import styled from "styled-components";
 import tw from "tailwind.macro";
 import UserLinks from "../UserLinks/UserLinks";
 import config from "../../../data/SiteConfig";
-import Me from "../../images/me-full.jpg";
 
 const AboutWrapper = styled.section`
   ${tw`w-full justify-between items-center flex flex-row min-h-screen bg-cover bg-left-bottom md:bg-right-bottom`};
-  background-image: url(${Me});
+  background-image: url("https://res.cloudinary.com/ericboggs/image/upload/v1563324016/eric_ulnjgi.jpg");
 
   .container {
     ${tw`w-5/6 md:w-full`};

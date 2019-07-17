@@ -1,22 +1,19 @@
 import styled from "styled-components";
 import tw from "tailwind.macro";
-import AlchemyPicture from "../../images/alchemy2.jpg";
-import AvftiPicture from "../../images/avfti-strength-blue.jpg";
-import GdiPicture from "../../images/gdi.jpg";
 
 const WorkItemIndividual = styled.div`
   ${tw`w-full flex flex-col md:flex-row min-h-screen justify-center pl-4 pr-4 bg-cover bg-center`};
 
   &.alchemy {
-    background-image: url(${AlchemyPicture});
+    background-image: url("https://res.cloudinary.com/ericboggs/image/upload/v1563324005/alchemy_bi6keb.jpg");
   }
 
   &.avfti {
-    background-image: url(${AvftiPicture});
+    background-image: url("https://res.cloudinary.com/ericboggs/image/upload/v1563324011/avfti_va2uwo.jpg");
   }
 
   &.gdi {
-    background-image: url(${GdiPicture});
+    background-image: url("https://res.cloudinary.com/ericboggs/image/upload/v1563324020/gdi_i2wd3c.jpg");
   }
 
   .work-item-summary {
