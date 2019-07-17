@@ -62,6 +62,14 @@ module.exports = {
       }
     },
     {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Alegreya Sans", "Alegreya"]
+        }
+      }
+    },
+    {
       resolve: "gatsby-plugin-nprogress",
       options: {
         color: config.themeColor
