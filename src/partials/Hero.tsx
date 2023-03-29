@@ -1,14 +1,23 @@
 const Hero = () => (
-  <section className="flex min-h-screen w-full flex-col items-center justify-center bg-[#2a2c39] text-white">
-    <h1 className="my-0 w-4/5 text-left font-sans text-2xl leading-normal text-white md:w-1/2 md:text-4xl">
-      Hello. I'm Eric Boggs.
-    </h1>
-    <p className="my-0 w-4/5 text-xl leading-normal text-white md:w-1/2 md:text-3xl">
-      I'm a developer, non-profit co-founder and Marine Corps Veteran that is
-      dedicated to social good. I currently work at P&amp;G and serve on the
-      board of A Voice for the Innocent, a nonprofit dedicated to helping those
-      affected by sexual violence.
-    </p>
+  <section className="flex min-h-screen w-full flex-row justify-center overflow-hidden py-20 text-white">
+    <div className="container mx-auto flex flex-row">
+      <div className="flex h-full w-1/2 flex-col justify-center text-left">
+        <h1 className="w-full pb-2 font-heading text-2xl font-bold uppercase leading-normal tracking-wide text-gray-300 md:text-6xl">
+          Eric Boggs
+        </h1>
+        <p className="my-0 w-3/4 pb-2 font-heading text-xl font-bold leading-loose tracking-wide text-gray-300 md:text-4xl">
+          Software Engineer, Teacher
+        </p>
+      </div>
+
+      <div className="flex w-1/2 flex-col items-center justify-center">
+        <img
+          src="/assets/images/me-square.jpg"
+          className="w-1/2 rounded-full"
+          alt="Eric Boggs"
+        />
+      </div>
+    </div>
   </section>
 );
 

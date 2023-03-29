@@ -29,7 +29,6 @@ Developer experience first:
 - 🛠 Prettier compatible with .astro files
 - 🦊 Husky
 - 🚫 lint-staged
-- 🚨 Commitlint
 - 🔧 One-click deploy on Netlify (or, manual if you prefer)
 
 ESLint with:

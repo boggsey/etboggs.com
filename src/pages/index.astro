@@ -5,8 +5,7 @@ import { Header } from '@/partials/Header';
 import { Hero } from '@/partials/Hero';
 import { About } from '@/partials/About';
 import { Work } from '@/partials/Work';
-import { ProjectList } from '@/partials/ProjectList';
-import { RecentPosts } from '@/partials/RecentPosts';
+import { Writing } from '@/partials/Writing';
 import Base from '@/templates/Base.astro';
 import { AppConfig } from '@/utils/AppConfig';
 import { sortByDate } from '@/utils/Posts';
@@ -20,10 +19,7 @@ const { description } = AppConfig;
 ---
 
 <Base head={{ title, description }}>
-  <Header />
   <Hero />
-  <About />
   <Work />
-  <ProjectList />
-  <RecentPosts postList={lastThreePosts} />
+  <Writing postList={lastThreePosts} />
 </Base>
