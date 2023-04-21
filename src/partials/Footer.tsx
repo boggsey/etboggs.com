@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => (
-  <footer className="flex min-h-[50vh] w-full flex-col items-center justify-between bg-[#212121] py-32  text-white md:flex-row">
+  <footer className="flex min-h-[50vh] w-full flex-col items-center justify-between bg-[#212121] bg-[url('assets/images/angled-high.png')] bg-cover py-32 text-white md:flex-row">
     <div className="container mx-auto">
       <div className="flex w-full flex-col justify-between md:flex-row">
         <div className="flex w-full flex-col text-center md:w-1/3 md:text-left">

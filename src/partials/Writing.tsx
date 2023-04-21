@@ -9,7 +9,7 @@ const Writing = (props: IRecentPostsProps) => {
   return (
     <section
       id="writing"
-      className="flex min-h-screen w-full flex-col items-center justify-center bg-white py-8"
+      className="flex min-h-[50vh] w-full flex-col items-center justify-center bg-zinc-200 py-8"
     >
       <div className="flex w-5/6 flex-col items-stretch justify-start md:w-3/4 md:flex-row">
         <div className="w-full text-left md:w-1/5">

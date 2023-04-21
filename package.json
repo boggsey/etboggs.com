@@ -48,7 +48,7 @@
   "dependencies": {
     "@fontsource/alegreya": "^4.5.11",
     "@fontsource/oswald": "^4.5.12",
-    "@fontsource/reenie-beanie": "^4.5.9",
+    "@fontsource/vollkorn": "^4.5.14",
     "astro-boilerplate-components": "^1.0.8",
     "date-fns": "^2.28.0",
     "react-icons": "^4.8.0"
